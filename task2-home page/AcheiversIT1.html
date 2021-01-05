@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AchiversIT-page</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+     *{
+       margin:0
+       }
+   .AchiversIT{
+              display: flex;
+      	      background-color: black;
+              border:1px solid black;
+	      padding: 10px;
+	      
+              }
+     .image{
+	   flex: 4;
+           padding:30px;
+           
+	   } 	
+    .childp{
+	  flex: 1;
+	  color: white;
+          text-align: center;
+          padding-top: 50px;
+          padding-left:130px;
+	  }
+    .childs{
+	  flex: 1;
+	  color: white;
+          text-align: center;
+          padding-top: 50px;
+          padding-right:50px;
+	  }
+      .childp:hover{
+              color:red;
+              }
+      .childs:hover{
+              color:red;
+              }
+      .bg{
+        padding:220px;
+        background-image:url("C:/Users/manas/Downloads/image/angular_training.jpg");
+       }
+       .b{
+          padding-left:350px;
+         text-align:center;
+         } 
+     
+      #line{
+         display:flex;
+         padding-top:10px;
+         padding-left:30px;
+         color:gray;
+          }
+      #child1{
+             flex:1;
+             padding:20px;
+             font-size:18px;
+              }
+      p:hover{
+              color:black;
+              border:2px solid orange;
+              border-radius:30px;
+              background-color: orangered;
+              padding:5px;
+              text-align: center;
+             }
+       .head{
+          padding:40px;
+            }
+       .head2{
+          padding-top:30px;
+           font-size:50px;
+             }
+         
+       .overlap{ 
+       display: flex; 
+       min-width: 1px; 
+       margin-left: 30px;
+       margin-right: 30px;
+       }
+   .child{ 
+       flex: 1;
+       border: 1px solid black; 
+       padding: 10px; 
+       margin: 10px; 
+       } 
+    
+   .maincontainer{
+        display: flex; 
+	padding: 5px; 
+	margin: 10px; 
+	}
+   .subchild1{ 
+       flex: 1;
+       }
+   .subchild2{ 
+       flex: 1;
+       font-size:17px;
+       padding-left:170px;
+       padding-top:10px; 
+       }
+   .child1{ 
+       flex: 1;
+       border: 1px solid black; 
+       padding: 10px; 
+       margin: 10px; 
+       }  
+   .child2{ 
+       flex: 1;
+       border: 1px solid black; 
+       padding: 10px; 
+       margin: 10px; 
+       } 
+   
+   .child:hover{
+       background-color:blue;
+       color:white;
+       transform:scale(1.1);
+       }
+   .child1:hover{
+       background-color:#ff3300;
+       color:white;
+       transform:scale(1.1);
+       }
+   .child2:hover{
+       background-color:blue;
+       color:white;
+       transform:scale(1.1);
+       }
+     .main-parent{
+      display:flex;
+      padding-left:70px;
+      padding-right:70px;
+      
+      }
+     .parent1{
+         flex: 1;
+         border:1px solid white;
+         padding:0;
+         margin:10px;
+         background-color:whitesmoke;
+         height:320px;
+         }
+      .mc3{
+         display: flex;
+         padding-top:1px;
+         padding-bottom:10px;
+         margin:-1px;             
+	}
+     .smc1{
+         flex: 1;
+         background-color:gold; 
+         padding:15px 15px 15px 15px;      
+         }
+     
+     .smc2{
+         flex: 1;
+         background-color:pink; 
+         padding:15px 15px 15px 15px;     
+         }
+     .smc4{
+         flex: 1;
+         background-color:blue; 
+         padding:15px 15px 15px 15px;
+         }
+     .smc5{
+         flex: 1;
+         background-color:red; 
+         padding:15px 15px 15px 15px;
+         }
+    .fab{
+      font-size:70px;
+      padding-left:25px;
+      align-items:center;
+      }
+    
+     .fas{
+      font-size:70px;
+      padding-left:20px;
+      align-items:center;
+      }
+    .smc3{
+      flex:1;
+      padding-top:1px;
+     }
+   
+    
+
+     .main-content{
+		  display: flex;
+                  margin-top:10px;
+                  margin-right:150px;
+                  margin-left:150px;
+		 }
+      .pre{
+		flex: 1;
+                border:1px solid white;
+                padding-left:30px;
+                padding-top:30px;
+                margin:20px;
+                width:120px;
+		height:140px;
+                align-items:center;
+                background-color:whitesmoke;
+              
+		}
+	
+             .fab{
+		 flex: 1;
+                 font-size: 90px;
+                 
+		 }
+              .fas{
+		 flex: 1;
+                 font-size: 90px;
+                 
+		 }
+             .main-present{
+                 display:flex;
+                 padding-left:150px;
+                padding-right:150px;
+                  }
+           .cls{
+              flex: 1;
+              border:1px solid white;
+              margin:20px;
+              background-color:WhiteSmoke;
+              height:300px;
+              }
+          .room{
+              display: flex;
+              padding-top:1px;
+              padding-bottom:10px;
+              margin:-1px;             
+	      }
+          .cls1{
+              flex: 1;
+              background-color:yellow; 
+              padding:15px 15px 15px 15px; 
+              }
+           .cls2{
+              flex: 1;
+              background-color:blue; 
+              padding:15px 15px 15px 15px; 
+              }
+           .cls3{
+              flex: 1;
+              background-color:red; 
+              padding:15px 15px 15px 15px; 
+              }
+     	  .IT{
+         	flex:1;
+          	padding-top:5px;
+        	 padding-left:20px;
+    		 }
+     	  .room1{
+       		 flex:1;
+        	padding-top:10px;
+        	padding-left:15px;
+       		font-size:18px;
+     		}
+         .room2{
+               flex:1;
+        	 padding-top:20px;
+        	 padding-left:15px;
+         	font-size:18px;
+         	 }
+         .enroll{
+	        background-color:skyblue;
+                border: 1px solid whitesmoke;
+    		height:100px;
+		text-align:center;
+		padding-top: 20px;
+                
+		}
+	 button{
+		padding:10px;
+               color:white;
+                border:1px solid blue;
+		}
+	
+         button:hover{
+                background-color:OrangeRed;
+                }
+        .edge{
+		display: flex;
+                padding-left:60px;
+                padding-right:60px;
+		}
+	.child4{
+		flex: 1;
+		border: 1px solid whitesmoke;
+		height: 150px;
+		text-align:center;
+		margin:20px;
+   		padding-top:40px;
+		}
+
+	       .top{
+			text-align:center;
+			background-image: url("C:/Users/manas/Downloads/image/12490.jpg");
+			border: 1px solid whitesmoke;
+			color:blue;
+                        
+			}
+		.box{
+			display: flex;
+			margin-left:100px;
+			margin-right:100px;
+                        height:350px;
+                        color:white;
+			}
+		.child0{
+			flex: 1;
+			border:1px solid black;
+			width:100px;
+			height:180px;
+			margin:30px;
+			}
+		.child0:hover{
+			     background-color:blue;
+                             
+			     }
+                    .head4{
+                       color:white;
+                        }
+                  
+                        
+                .company{
+			display:flex;
+                        margin-left:70px;
+                        margin-right:70px;
+			}
+		.child6{
+			flex: 1;
+			border:1px solid whitesmoke;
+			margin:30px;
+              		text-align: center;
+   			padding-top:20px;
+			height:100px;
+                        background-image: url("C:/Users/manas/Downloads/image/back-4.jpg");
+			}
+	        .job{
+		    display: flex;
+                    width:90%;
+                    margin-left:80px;
+                    margin-right:20px;
+		    }
+		.child7{
+			flex: 1;
+                        border:1px solid black;
+			padding-bottom:60px;
+                        padding-left:10px;
+			margin:30px;
+			padding-top:20px;
+                        background-image: url("C:/Users/manas/Downloads/image/back-6.jpeg");
+			color:white;
+                        background-repeat:no-repeat;
+                        background-size:cover;
+                        background-position:center;
+                         
+			}
+		.business{
+			border: 1px solid black;
+                        padding: 80px;
+			background-image: url("C:/Users/manas/Downloads/image/edureka.png");
+			color:white;
+                        background-position:right;
+                        background-repeat:no-repeat;
+                        background-size:cover;
+			}
+		.client{
+			display:flex;
+			margin-left:150px;
+			margin-right:150px;
+			}
+		.child8{
+			flex: 1;
+			padding:10px;
+                        margin:20px;
+			}
+		.impress{
+			border:1px solid black;
+                        background-image: url("C:/Users/manas/Downloads/image/know.jpg");
+			height:230px;
+			padding-left:40px;
+                        padding-top:20px;
+			margin-top:20px;
+			margin-left:100px;
+			margin-right:100px;
+                        color:white;
+			}
+		.impressed{
+			  display:flex;
+			  margin-top:50px;
+                          color:white;
+			  }
+		.child9{
+			flex: 0;
+                        padding-left:50px;
+			}
+                .child9i{
+                         flex:0.3;
+                         padding-left:0;
+                         padding-right:0;
+                         margin-left:3px;
+                         }
+ 		.child9i1{
+			flex: 0.1;
+			margin-right: 10px;
+                        margin-left:3px;
+			margin-top:15px;
+                        padding-top:3px;
+			}
+		.child9i2{
+			flex:0;
+			margin-right: 30px;
+			margin-top:15px;
+                        padding-top:3px;
+			}
+		button{
+			flex: 0.5;
+			margin-right: 30px;
+			background-color:blue;
+                         margin-top:5px;
+			}
+		.footer{
+			display: flex;
+			border:1px solid black;
+			height:300px;
+			padding-top:60px;
+             		color:gray;
+			background-color:black;
+			}
+                .child10{
+                        flex:1;
+                        color:gray;
+                        }
+   		
+		.list{
+			padding:13px;
+                         color:white;
+			}
+		.list:hover{
+     			color:red;
+				}
+		.child11{
+                           color:gray; 
+                           background-color:black; 
+                           padding:90px; 
+                           height:70px;  
+                          text-align:center;
+                          }
+                        .child11i .fa{
+                            color:white;
+                             }
+                         
+                         .fa{
+                            font-size:25px;
+                            color:yellow;
+                            padding-right:10px;
+                           
+                            }
+                         
+       
+			.last{
+				display: flex;
+                                padding-top:10px;
+				}
+			.child12{
+                               flex: 2;
+				margin-left:200px;
+				}
+			.child12i{
+                               flex: 1;
+				}
+			.child12i:hover{
+					color:orange;
+					}
+                         
+                         h3{
+                            text-align:center;
+                             } 			
+</style>
+</head>
+<body>
+<div class="AchiversIT">
+   <div class="image">
+         <img src="C:/Users/manas/Downloads/image/AIT.jpg" alt="ait" width="150px">
+   </div>
+   <div class="childp"><h4>Corporate Training</h4></div>
+   <div class="childs"><h4>Placements Page</h4></div>
+</div>
+<span id="line">
+<span><p id="child1">Courses</p></span>
+<span><p id="child1">UI Development</p></span>
+<span><p id="child1">Angular</p></span>
+<span><p id="child1">ReactJS </p></span>
+<span><p id="child1">VUEJS</p></span>
+<span><p id="child1">MEAN </p></span>
+<span><p id="child1">MERN </p></span>
+<span><p id="child1">Digital Marketing</p></span>
+<span><p id="child1">Python </p></span>
+<span><p id="child1">IONIC</p></span>
+<span><p id="child1">React Native</p></span>
+<span><p id="child1">WEB DEV</p></span>
+</span>
+<div class="bg">
+     
+    <h1 style="padding-left:450px; color:white;">ANGURAL DEVELOPMENT COURSE</h1>
+<br>
+ <div class="b"> <button>EXPLORE COURSE</button> </div>
+</div>
+<div class="overlap">
+    <div class="child2">
+        <div class="maincontainer">
+           <div class="subchild1">BECOME A<br><h5 style="font-size:14px;">UI DEVELOPER</h5>
+           </div>
+           <div class="subchild2">know more
+           </div>
+        </div>
+    </div>
+    <div class="child1">
+        <div class="maincontainer">
+           <div class="subchild1">BECOME A <br><h5 style="font-size:14px;">ANGULARDEVELOPER</h5>
+           </div>
+           <div class="subchild2">know more
+           </div>
+        </div>
+    </div>
+    <div class="child2">
+         <div class="maincontainer">
+            <div class="subchild1">BECOME A<br><h5 style="font-size:14px;"> REACTJSDEVELOPER</h5>
+            </div>
+            <div class="subchild2">know more
+            </div>
+         </div>
+    </div>
+</div>
+
+<h2 class="head">TRENDING COURSES</h2>
+<div class="main-parent ">
+     <div class="parent1">
+            <div class="mc3">
+                   <div class="smc1"><i class="fab fa-angular"></i></div>
+		   <div class="smc1"><h3>ANGULAR DEVELOPMENT COURSE</h3></div>
+            </div>
+            <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+            </div><hr>
+            <div class="mc3"><h3>Reviews</h3></div>
+            <div class="smc3"> 
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             5.0(257)
+             </div>       
+    </div>
+     <div class="parent1">
+             <div class="mc3">
+                   <div class="smc2"><i class="fab fa-react"></i></div>
+		   <div class="smc2"><h3>REACT DEVELOPMENT COURSE</h3></div>
+             </div>
+             <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+             </div><hr>
+             <div class="mc3"><h3>Reviews</h3>
+             </div>
+             <div class="smc3"> 
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>5.0(165)
+             </div>
+     </div>
+     <div class="parent1">
+             <div class="mc3">
+                   <div class="smc1"><i class="fas fa-shield-alt"></i></div>
+		   <div class="smc1"><h3>MEAN STACK DEVELOPMENT COURSE</h3></div>
+             </div>
+             <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+             </div><hr>
+             <div class="mc3"><h3>Reviews</h3>
+             </div>
+             <div class="smc3"> 
+            <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>4.5(123)
+             </div>
+      </div>
+     
+     <div class="parent1">
+             <div class="mc3">
+                   <div class="smc5"><i class="fab fa-firefox"></i></div>
+		   <div class="smc5"><h3>MERN STACK DEVELOPMENT COURSE</h3></div>
+             </div>
+             <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+             </div><hr>
+             <div class="mc3"><h3>Reviews</h3>
+             </div>
+            <div class="smc3"> 
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             </div>
+     </div>
+</div>
+<div class="main-parent ">
+     <div class="parent1">
+            <div class="mc3">
+                   <div class="smc4"><i class="fas fa-globe"></i></div>
+		   <div class="smc4"><h3>WEB DEVELOPMENT COURSE</h3></div>
+            </div>
+            <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+            </div><hr>
+            <div class="mc3"><h3>Reviews</h3>
+            </div>
+             <div class="smc3"> 
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>4.8(453)
+             </div>      
+    </div>
+     <div class="parent1">
+             <div class="mc3">
+                   <div class="smc1"><i class="fas fa-poll"></i></div>
+		   <div class="smc1"><h3>DIGITAL DEVELOPMENT COURSE</h3></div>
+             </div>
+             <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+             </div><hr>
+             <div class="mc3"><h3>Reviews</h3>
+             </div>
+             <div class="smc3"> 
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>4.5(654)
+             </div>
+     </div>
+     <div class="parent1">
+             <div class="mc3">
+                   <div class="smc2"><i class="fab fa-react"></i></div>
+		   <div class="smc2"><h3>REACT NATIVE DEVELOPMENT COURSE</h3></div>
+             </div>
+             <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+             </div><hr>
+             <div class="mc3"><h3>Reviews</h3>
+             </div>
+             <div class="smc3"> 
+            <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>4.2(675)
+             </div>
+      </div>
+     
+     <div class="parent1">
+             <div class="mc3">
+                   <div class="smc1"><i class="fab fa-bity"></i></div>
+		   <div class="smc1"><h3>IONIC DEVELOPMENT COURSE</h3></div>
+             </div>
+             <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+             </div>
+		   <hr>
+             <div class="mc3"><h3>Reviews</h3>
+             </div>
+             <div class="smc3"> 
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>5.0(657)
+             </div>
+     </div>
+</div>
+<h2 style="padding:40px;">RECENT ADDITIONS</h2>
+<div class="main-parent ">
+    <div class="parent1">
+            <div class="mc3">
+                   <div class="smc1"><i class="fab fa-uikit"></i></div>
+		   <div class="smc1"><h3>UI DEVELOPMENT COURSE</h3></div>
+            </div>
+                  <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+                  </div>
+		  <hr>
+                  <div class="mc3"><h3>Reviews</h3></div>
+                  <div class="smc3"> 
+            <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>4.6(432)
+             </div> 
+    </div>
+     <div class="parent1">
+             <div class="mc3">
+                   <div class="smc4"><i class="fab fa-vuejs"></i></div>
+		   <div class="smc4"><h3>VUEJS DEVELOPMENT COURSE</h3></div>
+             </div>
+             <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+             </div>
+             <hr>
+             <div class="mc3"><h3>Reviews</h3>
+            </div>
+            <div class="smc3"> 
+           <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>4.1(345)
+             </div>
+     </div>
+     <div class="parent1">
+             <div class="mc3">
+                   <div class="smc5"><i class="fab fa-wordpress-simple"></i></div>
+		   <div class="smc5"><h3>WORDPRESS DEVELOPMENT COURSE</h3></div>
+             </div>
+             <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+             </div>
+		   <hr>
+             <div class="mc3"><h3>Reviews</h3>
+             </div>
+             <div class="smc3">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>4.3(546)
+             </div>
+      </div>
+     
+     <div class="parent1">
+             <div class="mc3">
+                   <div class="smc1"><i class="fab fa-python"></i></div>
+		   <div class="smc1"><h3>PYTHON DEVELOPMENT COURSE</h3></div>
+             </div>
+             <div class="mc3">Angular is a TypeScript-based open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS. Wikipedia
+             </div>
+		   <hr>
+             <div class="mc3"><h3>Reviews</h3>
+             </div>
+             <div class="smc3"> 
+           <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>4.7(345)
+             </div>
+           
+     </div>
+</div>
+<h2 class="head">Discover Top Categories</h2>
+<div class="main-content">
+        <div class="pre"><i class="fab fa-dev"></i>
+          <h5 style="padding-top:10px;padding-left:30px;">DevOps</h5>
+        </div>
+        <div class="pre"><i class="fas fa-laptop-code"></i>
+           <h5 style="padding-top:10px;padding-left:10px;">Front-End</h5>
+        </div>
+        <div class="pre"><i class="fas fa-mobile-alt"></i>
+            <h5 style="padding-top:10px;">Mobile App Dev</h5>
+        </div>
+        <div class="pre"><i class="fas fa-funnel-dollar"></i>
+           <h5 style="padding-top:10px;padding-left:10px;">Digital Marketing</h5>
+        </div>
+        <div class="pre"><i class="fas fa-file-code"></i>
+            <h5 style="padding-top:10px;">Program & Frame Works</h5>
+        </div>
+        <div class="pre"><i class="fas fa-database"></i>
+          <h5 style="padding-top:10px; padding-left:25px; ">Data Types</h5>
+        </div>
+</div>
+<div class="main-content">
+    <div class="pre"><i class="fas fa-chalkboard-teacher"></i>
+          <h5 style="padding-top:10px;">Software testing</h5>
+    </div>
+    <div class="pre"><i class="fab fa-jsfiddle"></i>
+          <h5 style="padding-top:10px;padding-left:10px;">Cloud Computing</h5>
+    </div>
+    <div class="pre"><i class="fas fa-mask"></i>
+          <h5 style="padding-top:10px;padding-left:10px;">Cyber Security</h5>
+    </div>
+    <div class="pre"><i class="fas fa-mobile-alt"></i>
+          <h5 style="padding-top:10px;">Artificial Inteligents</h5>
+    </div>
+    <div class="pre"><i class="fab fa-python"></i>
+          <h5 style="padding-top:10px;padding-left:30px;">Python</h5>
+    </div>
+    <div class="pre"><i class="fab fa-codepen"></i>
+          <h5 style="padding-top:10px;padding-left:30px;">Big data</h5>
+    </div>
+</div>
+
+<h2 class="head">Reviews</h2>
+<div class="main-present ">
+     <div class="cls">
+             <div class="room">
+                   <div class="cls1"><i class="fab fa-medium-m"></i></div>
+		   <div class="cls1"><h2 style="padding-top:20px;">MANASA S</h2></div>
+             </div>
+             <div class="room1">Angular Certification training
+             </div>
+             <div class="IT"> 
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             </div>
+             <div class="room2">I had recently attended the Angular js Training in AchieversIT, I must say they were outstanding. They made sure everything was right from the start of the workshop till the end. 
+             </div>
+     </div>
+     <div class="cls">
+             <div class="room">
+                   <div class="cls2"><i class="fas fa-bold"></i></div>
+		   <div class="cls2"><h2 style="padding-top:20px;">BHANU M</h2></div>
+             </div>
+             <div class="room1">Digital Marketing Certification training
+             </div>
+             <div class="IT"> 
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             </div>
+             <div class="room2">I had recently attended the Angular js Training in AchieversIT, I must say they were outstanding. They made sure everything was right from the start of the workshop till the end. 
+             </div>
+     </div>
+     <div class="cls">
+              <div class="room">
+                   <div class="cls3"><i class="fas fa-font"></i></div>
+		   <div class="cls3"><h2 style="padding-top:20px;">ANITHA N</h2></div>
+             </div>
+             <div class="room1">Angular,React,Ionic training
+             </div>
+             <div class="IT"> 
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             </div>
+             <div class="room2">I had recently attended the Angular js Training in AchieversIT, I must say they were outstanding. They made sure everything was right from the start of the workshop till the end. 
+             </div>
+     </div>
+</div>
+<h3>VIEW ALL REVIEWS></h3>
+<br>
+<div class="enroll">
+           <h5 style="color:white; font-size:18px;">Enroll, Learn, Grow, Repeat! Get ready to achieve your learning goals with Acheivers IT</h5><br>
+         <button>CONTACT US</button>
+</div>
+<h2 class="head">Acheivers IT Edge</h2>
+<div class="edge">
+<div class="child4"><i class="fas fa-check-circle"></i>
+<h5><b>Real Time Doubt Resolution</b><br>With Live Instructors</h5>
+</div>
+<div class="child4"><i class="fas fa-infinity"></i>
+<h5><b>Real Time Doubt Resolution</b><br>With Live Instructors</h5>
+</div>
+<div class="child4"><i class="fas fa-clock"></i>
+<h5><b>Real Time Doubt Resolution</b><br>With Live Instructors</h5>
+</div>
+<div class="child4"><i class="fas fa-chart-line"></i>
+<h5><b>Real Time Doubt Resolution</b><br>With Live Instructors</h5>
+</div>
+</div>
+
+<div class="top">
+<h1 class="head2">Why We are on TOP 1</h1>
+More people train with AcheiversIT because of ourcommitment to quality, Placement Support, and Real-time Training.
+ <div class="box">
+   <div class="child0"><h1 class="head2">13925+</h1><br><h4 class="head4">TRENDING COURSES</h4></div>
+   <div class="child0"><h1 class="head2">100+</h1><br><h4 class="head4">IT Companies are tied-UP to hire <br>our trained students</h4></div>
+   <div class="child0"><h1 class="head2">50+</h1><br><h4 class="head4">Students attend Interviews every<br> day through our Placement Cell</h4></div>
+   <div class="child0"><h1 class="head2">5+</h1><br><h4 class="head4">Of our students Get Jobs every<br> day in Bangalore and Chennai</h4></div>
+ </div>
+</div>
+<h2 class="head">Our Trainers From</h2>
+<div class="company">
+<div class="child6"><img src="C:\Users\manas\Downloads\image\cognizant.png" alt="cognizant" width="150px"/></div>
+<div class="child6"><img src="C:\Users\manas\Downloads\image\hcl.png" alt="hcl" width="150px"/></div>
+<div class="child6"><img src="C:\Users\manas\Downloads\image\infosys.png" alt="infosys" width="150px"/></div>
+<div class="child6"><img src="C:\Users\manas\Downloads\image\accenture.png" alt="accenture" width="150px"/></div>
+</div>
+<div class="company">
+<div class="child6"><img src="C:\Users\manas\Downloads\image\oracle.png" alt="oracle" width="150px"/></div>
+<div class="child6"><img src="C:\Users\manas\Downloads\image\ibm.png" alt="ibm" width="150px"/></div>
+<div class="child6"><img src="C:\Users\manas\Downloads\image\amazon.png" alt="amazon" width="150px"/></div>
+<div class="child6"><img src="C:\Users\manas\Downloads\image\visa.png" alt="visa" width="150px"/></div>
+</div>
+<div class="company">
+<div class="child6"><img src="C:\Users\manas\Downloads\image\flipcart.png" alt="flipkart" width="150px"/></div>
+<div class="child6"><img src="C:\Users\manas\Downloads\image\dell.png" alt="dell" width="150px"/></div>
+<div class="child6"><img src="C:\Users\manas\Downloads\image\genpact.png" alt="genpact" width="150px"/> </div>
+<div class="child6"><img src="C:\Users\manas\Downloads\image\wipro.png" alt="wipro" width="150px"/></div>
+</div>
+<h2 class="head">AchiversIT Process</h2>
+<div class="process">
+<img src="C:\Users\manas\Downloads\image\process.jpg" alt="process" width="100%" height="600px"/>
+</div>
+<h2 class="head">Latest Job Openings</h2>
+<div class="job">
+<div class="child7"><h2>Front End Developer - Angular js,Nodejs</h2><h4>Location : Bangalore</h4></div>
+<div class="child7"><h2>Senior Software Engineer - Java Full Stack Developer</h2><h4>Location : Bangalore</h4></div>
+</div>
+<div class="job">
+<div class="child7"><h2>UI Developer - AngularJS Frameworks</h2><h4>Location : Bangalore</h4></div>
+<div class="child7"><h2>Python Developer ( Fresher ) Requirement.</h2><h4>Location : Bangalore</h4></div>
+</div>
+<div class="job">
+<div class="child7"><h2>UI UX Designer / Developer</h2><h4>Location : Bangalore</h4></div>
+<div class="child7"><h2>.Net senior Developer- 5positions</h2><h4>Location : Bangalore</h4></div>
+</div>
+<div class="business">
+<h2>Acheivers IT !</h2> for business
+<h2>No more dull edges in your company.Make your employees into masters....</h2><br>
+<h2>Nurture talent with instructor-led courses on trending technologies</h2><br>
+<button>BUSINESS CONTACT</button>
+</div>
+<h2 class="head">Our Corporate Clients</h2>
+<div class="client">
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\cognizant.png" alt="cognizant" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\hcl.png" alt="hcl" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\infosys.png" alt="infosys" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\accenture.png" alt="accenture" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\oracle.png" alt="oracle" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\ibm.png" alt="ibm" width="150px"/>
+	</div>
+</div>
+<div class="client">
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\wipro.png" alt="wipro" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\amazon.png" alt="amazon" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\flipcart.png" alt="flipkart" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\visa.png" alt="visa" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\cisco.png" alt="cisco" width="150px"/>
+	</div>
+	<div class="child8">
+	<img src="C:\Users\manas\Downloads\image\dell.png" alt="dell" width="150px"/>
+	</div>
+</div>
+<div class="impress">
+<div><h2>Impressed by Us? Enroll Now</h2><br>Structure your learning and get a certificate to prove it.EMAIL
+</div>
+<div class="impressed">
+
+       <div class="child9">
+	   <label for="fname">EMAIL</label><br>
+	   <input type="email" name="email" id="fname" value="Email">
+	</div>
+	<div class="child9i">
+   	  <label for="fname1">CONTACT US</label><br>
+	  <input type="text" name="fname" id="fname1" value="contact us">
+	</div>
+        <div class="child9i1">
+            <label></label>
+	   <input type="text" value="737896" name="fname">
+	</div>
+	<div class="child9i2">
+            <label></label>
+	   <input type="text" placeholder="captch text"  name="fname">
+	</div>
+	<div>
+          <button>REACH US</button>
+        </div>
+</div>
+</div>
+<div class="footer">
+<div class="child10">
+ <img src="C:/Users/manas/Downloads/image\AIT.jpg" alt="AIT"><br>
+AchieversIT - provides a wide group of<br> opportunities for freshers and <br>Experienced candidate who can develop <br>their skills and build their career<br> opportunities across multiple Companies.
+</div>
+<div class="child10"><h2>COMPANY</h2>
+<ul>
+   <li class="list">Home</li>
+   <li class="list">Placements</li>
+   <li class="list">Corporate Training</li>
+   <li class="list">CONTACT US</li>
+</ul>
+</div>
+<div class="child10"><h2>TRENDING COURSES</h2>
+<ul>
+   <li class="list">UI Development Course</li>
+   <li class="list">Angular JS Course</li>
+   <li class="list">React JS Course</li>
+   <li class="list">Digital Marketing Course</li>
+   <li class="list">Python Course</li>
+</ul>
+</div>
+<div class="child10"><h2>CONTACT INFO</h2>
+<ul>
+   <li class="list">#272, 6th Main, Next to Preksha<br> Montessori , 1st Floor, BTM 2nd Stage,<br> Bangalore, India - 560076</li>
+   <li class="list">India : +91 8431-040-457</li>
+   <li class="list">info@achieversit.com</li>
+</ul>
+</div>
+</div>
+<hr>
+<div class="child11" >
+  <div class="child11i">
+	<span><i class="fa fa-facebook-official"></i></span
+	<span><i class="fa fa-linkedin-in"></i></span>
+	<span><i class="fa fa-twitter-square"></i></span>
+	<span><i class="fa fa-pinterest-square"></i></span>
+	<span><i class="fa fa-youtube-play"></i></span>
+  </div>
+<div class="last">
+<div class="child12">Copyright © 2020 AchieversIT. All Rights Reserved</div>
+<div class="child12i">Privacy Policy</div>
+<div class="child12i">Terms of use</div>
+<div class="child12i">Refund Policy</div>
+</div>
+</div>
+</body>
+</html>
