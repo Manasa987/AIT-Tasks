@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> two number in which there  sum should be  equal to 10  of an array</title>
+    </head>
+    <body>
+        <script>
+             let i,j,n,sum,newArray;
+	           let arr = [2,3,5, 7,9,0];
+                 newArray=[];
+	             function pair(a,n){
+                for(i=0;i<a.length;i++){
+	            for(j=i+1;j<a.length;j++){
+                if(a[i] +a[j]==n){
+                newArray.push([a[i],a[j]]); 
+	 		        }
+	 	         }
+	            }
+                }        
+              pair(arr, 10);
+            document.write(newArray);
+
+        </script>
+    </body>
+</html>
