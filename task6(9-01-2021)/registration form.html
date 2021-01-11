@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>registration form</title>
+</head>
+<body>
+<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+    <label>First name :</label>
+    <input type = "text" name = "fname" placeholder="Enter a firstname" ><span id="error"></span>  <br><br>
+    <label>Last name :</label> 
+    <input type = "text" name = "lname" placeholder="Enter a lastname"><span id="demo"></span> <br><br>
+    <label>Email :</label>
+    <input type = "text" name = "email" placeholder="Enter a Email"><span id="address"></span> <br><br>
+    <label>password :</label>
+    <input type = "text" name = "pwd" placeholder="Enter a password"><span id="demo1"></span> <br><br>
+    <label>Contact phone number:</label>
+    <input type = "tel" name = "phone number" placeholder="Enter a Contact phone number"><span id="number"></span> <br><br>
+    <input type="submit" value="Submit">
+</form>
+<script>
+    function validateForm() {
+      var fname = document.forms["myForm"]["fname"].value;
+            if (fname == "") {
+              document.getElementById("error").innerHTML="First Name must be filled out";
+            return false;
+            }
+            else if(fname.length <4){
+              document.getElementById("error").innerHTML="please enter more than 4 char";
+              return false;
+            }
+            else if(fname.length >10){
+              document.getElementById("error").innerHTML="please enter less than 10 char";
+              return false;
+            }
+
+      var lname = document.forms["myForm"]["lname"].value;
+           if (lname == "") {
+            document.getElementById("demo").innerHTML="Last Name must be filled out";
+            return false;
+           }
+            else if(lname.length <4){
+              document.getElementById("demo").innerHTML="please enter more than 4 character";
+              return false;
+            }
+            else if(lname.length >10){
+              document.getElementById("demo").innerHTML="please enter more than 10 character";
+              return false;
+            }
+      var email= document.forms["myForm"]["email"].value;
+            if (email == "") {
+              document.getElementById("address").innerHTML="Email address must be filled out";
+              return false;
+            }
+            else if(email.indexOf('@') <=2){
+              document.getElementById("address").innerHTML="invalid @ position";
+              return false;
+            }
+            else if((email.charAt(email.length-4) !=".")&&(email.charAt(email.length-3)!=".")){
+              document.getElementById("address").innerHTML="invalid . position";
+              return false;
+            }
+            
+
+      var pwd = document.forms["myForm"]["pwd"].value;
+             if(pwd.length<8){
+              document.getElementById("demo1").innerHTML="enter more than 8 character";
+              return false; 
+            }
+            else if(pwd.length>14){
+              document.getElementById("demo1").innerHTML="maximum password strenght is 14 characters";
+              return false; 
+            }
+            else if(pwd.search(/[A-Z]/) == -1){
+              document.getElementById("demo1").innerHTML="select one upper case letter ";
+              return false; 
+            }
+            else if(pwd.search(/[a-z]/) == -1){
+              document.getElementById("demo1").innerHTML="select one lower case letters ";
+              return false; 
+            }
+            
+            else if(pwd.search(/[0-9]/) == -1){
+              document.getElementById("demo1").innerHTML="select one number ";
+              return false; 
+            }
+            else if(pwd.search(/[!\@\#\$\%^\^\&\*\(\)\_\+\,\.\;\:]/) == -1){
+              document.getElementById("demo1").innerHTML="select one special character ";
+              return false; 
+            }
+
+      var phone = document.forms["myForm"]["phone number"].value;
+            if (phone == "") {
+              document.getElementById("number").innerHTML="contact phone number must be filled out";
+              return false;
+            }
+            else if(isNaN(phone)){
+              document.getElementById("number").innerHTML="enter numeric values only";
+              return false;
+            }
+            else if(phone.length<10){
+              document.getElementById("number").innerHTML="enter  10 numbers only";
+              return false;
+            }
+            else if(phone.length >10){
+              document.getElementById("number").innerHTML="enter 10 digits  only";
+              return false;
+            }
+            else if((mobile.charAt(0) !=6)&&(mobile.charAt(0)!=7)&&(mobile.charAt(0) !=8)&&(mobile.charAt(0) !=9)){
+              document.getElementById("number").innerHTML="enter number starts with 6 or 7 or 8 or 9";
+              return false;
+            }
+          }
+    </script>
+
+</body>
+</html>
