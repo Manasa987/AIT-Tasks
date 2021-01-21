@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>facebook registration form-js</title>
+    <style>
+       .main{
+           border:1px solid  lightgray;
+           border-radius: 6px;
+           width:30%;
+           height:590px;
+           align-items: center;
+           padding-left: 15px;
+           margin: 50px 500px 50px 500px;
+       }
+       .para{
+           color:gray;
+       }
+       .para1{
+           color:gray;
+           font-size: 13px;
+       }
+        .col{
+            background-color:whitesmoke;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+            height: 35px;
+            width:45%;
+            padding-right: 5px;
+            font-size: 15px;
+            margin-right: 10px;
+        }
+        .col1{
+            background-color:whitesmoke;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+            height: 35px;
+            width: 96%;
+            font-size: 15px;
+        }
+       
+        .sel{
+            width:30%;
+            height: 40px;
+            margin-right: 12px;
+            border-radius: 3px;
+            border: 1px solid lightgray;
+        }
+        .gen{
+            flex:1;
+            border: 1px solid;
+            height: 20px;
+            padding: 10px;
+            margin-right: 13px;
+            border-radius: 3px;
+            border: 1px solid lightgray;
+        }
+        .gen1{
+        width:40%;
+        }
+        .sub{
+            border-radius: 7px;
+            border: 1px solid lightgray;
+            align-items: center;
+            padding: 3px;
+            height: 40px;
+            width:50%;
+            margin-top: 10px;
+            margin-left: 100px;
+            color: white;
+            font-size: 25px;
+            background-color: green;
+        }
+        
+    </style>
+</head>
+<div class="main">
+<body>
+    <h1><b>Sign up</b></h1>
+    <p class="para">It's quick and easy</p>
+    <hr>
+    <form  name="myForm" action=" " onsubmit="validateForm(event)" method="post">
+        
+        <input type="text" name="fname" placeholder="First name"   class="col" id="demo" > 
+        <input type="text" name="sname" placeholder="Surname"  class="col" id="demo1"><br><br>
+        <input type="text" name="mobile" placeholder="Mobile number or email address"  class="col1" id="demo2"><br><br>
+        <input type="password" name="pwd" placeholder="New password"  class="col1" id="demo3"><br>
+        <p class="para">Date of birth:</p>
+        <select class="sel" id="opt" name="opt">
+              <option value="">1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+        </select> 
+        <select class="sel" id="opt1" name="opt1">
+                <option value="">Jan</option>
+                <option>Feb</option>
+                <option>March</option>
+                <option>Apr</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>Agust</option>
+                <option>Sept</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+        </select>
+        <select class="sel" id="opt2" name="opt2">
+            <option value="">Year</option>
+            <option>1997</option>
+            <option>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+    </select>
+    <p class="para">Gender:</p>
+    <div style="display: flex;" >
+       <div class="gen" id="gen">Female<input type="radio" name="gender"  value="female" class="gen1"></div>
+       <div class="gen" id="gen1">Male<input type="radio"  name="gender"  value="male" class="gen1"></div>
+        <div class="gen" id="gen2">Custom<input type="radio"  name="gender"   value="custom" class="gen1"></div>
+        </div>
+        <p class="para1">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+        <button type="submit" class="sub"  >sign up</button></div>
+        
+    </form>
+    <script>
+        function validateForm(e) {
+            e.preventDefault();
+            let genVal = "";
+            var female= document.getElementsByName("gender");
+            for(let data of female){
+                if(data.checked == true){
+                    genVal = data.value;
+                }
+            }
+            var fname= document.forms["myForm"]["fname"].value;
+            if(fname==""){
+                document.getElementById("demo").style.border='1px solid red';
+                
+            }else{
+                document.getElementById("demo").style.border='1px solid gray';
+                
+            }
+
+            var sname= document.forms["myForm"]["sname"].value;
+            if(sname==""){
+                document.getElementById("demo1").style.border='1px solid red';
+            }else{
+                document.getElementById("demo1").style.border='1px solid gray';
+                
+            }
+            var phone= document.forms["myForm"]["mobile"].value;
+            if(phone==""){
+                document.getElementById("demo2").style.border='1px solid red';
+                
+            }else{
+                document.getElementById("demo2").style.border='1px solid gray';
+                
+            }
+            var psw= document.forms["myForm"]["pwd"].value;
+            if(psw==""){
+                document.getElementById("demo3").style.border='1px solid red';
+            }else{
+                document.getElementById("demo3").style.border='1px solid gray';
+                
+            }
+            var days= document.forms["myForm"]["opt"].value;
+            if(days==""){
+                document.getElementById("opt").style.border='1px solid red';    
+            }else{
+                document.getElementById("opt").style.border='1px solid gray';   
+            }
+           
+            var months= document.forms["myForm"]["opt1"].value;
+            if(months==""){
+                document.getElementById("opt1").style.border='1px solid red';    
+            }else{
+                document.getElementById("opt1").style.border='1px solid gray';
+                
+            }
+            
+            var years= document.forms["myForm"]["opt2"].value;
+            if(years==""){
+                document.getElementById("opt2").style.border='1px solid red';
+            }else{
+                document.getElementById("opt2").style.border='1px solid gray';
+                
+            }
+        
+            if(genVal==""){
+                 document.getElementById("gen").style.border='1px solid red';
+                       
+            }
+            if(genVal==""){
+                 document.getElementById("gen1").style.border='1px solid red';
+                       
+            }
+            if(genVal==""){
+                 document.getElementById("gen2").style.border='1px solid red';
+                       
+            }
+            
+        else{
+            document.forms.myForm.submit();
+        }
+                                  
+        }
+    </script>
+    </div>
+</body>
+</html>
