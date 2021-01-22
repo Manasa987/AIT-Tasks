@@ -4,7 +4,7 @@
 
     </head>
     <body>
-        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+        <form name="myForm" action="" onsubmit="validateForm(event)" method="post">
             <label>First name :</label>
             <input type = "text" name = "fname" placeholder="Enter a firstname" id="demo" >  <br><br>
             <label>Contact phone number:</label>
@@ -21,7 +21,8 @@
             <input type="submit" value="Sign up">
         </form>
         <script>
-           function validateForm(){
+           function validateForm(e){
+            e.preventDefault();
             var fname= document.forms["myForm"]["fname"].value;
             if(fname==""){
                 document.getElementById("demo").style.border='1px solid red';   
@@ -38,13 +39,15 @@
             if (psw == "") {
                 document.getElementById("error").innerHTML="please enter your password";
                 document.getElementById("error").style.color="red";
-            return false;
             }
             var gen = document.forms["myForm"]["gender"].value;
             if ( gen== "") {
-                document.getElementById("demo3").innerHTML=" ";
-                return false;   
+                document.getElementById("demo3").innerHTML=" ";   
             }
+            if(fname && phone && email && psw && gen){
+                document.forms.myForm.submit();
+            }
+            
             } 
         </script>
     </body>
