@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achieversit </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <style>
+        .a1{
+            color:white;
+        }
+        .a1:hover{
+             color:red; 
+        }
+        .tx{
+            color: gray;
+            font-size: 18px;
+        }
+        .tx:hover{
+            color:gray;
+        }
+        .txt{
+            color: gray;
+            padding:10px;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        .txt:hover{
+            background-color: red;
+            border-radius: 25px;
+            padding: 10px;
+            color: white;
+        }
+        .fa-bars{
+            color:gray;
+        }
+        .dropdown-menu{
+            width: 250%;
+            height: 500px;
+            font-size: 20px;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 400px;
+        }
+        button {
+            background: red;
+        }
+        button:hover{
+            background-color: blue;
+        }
+        .carousel-caption h1 {
+            font-size: 25px;
+            font-style: normal;
+        }
+        .name {
+            position: relative;
+            bottom: 100px;
+            left: 20px;
+        }
+        .pos {
+            position: relative;
+            bottom: 25px;
+            align-items: center;
+            right: 10px;
+            margin-left: 40px;
+        }
+        .box {
+            background-color: white;
+            margin-left: 25px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(177, 177, 240);
+            color: black;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box1 {
+            background-color: white;
+            margin-left: 25px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(177, 177, 240);
+            color: black;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .box2 {
+            background-color: white;
+            margin-left: 25px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgb(177, 177, 240);
+            color: black;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box:hover {
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+            background-color: brown;
+        }
+
+        .box1:hover {
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+            background-color: chocolate;
+        }
+        .box2:hover {
+            color: white;
+            transform: scale(1.1);
+            transition-duration: 0.3s;
+            background-color: coral;
+        }
+
+        .fab {
+            font-size: 65px;
+            color:white;
+        }
+        .main{
+            background: #83a4d4;
+            background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+            background: linear-gradient(to right, #b6fbff, #83a4d4);
+            box-shadow: 0 0 15px 0.5px rgba(0, 0, 0, 0.15);
+            color:white;
+        }
+        .main1{
+            background: #FDFC47;
+            background: -webkit-linear-gradient(to right, #24FE41, #FDFC47);
+            background: linear-gradient(to right, #24FE41, #FDFC47);
+            box-shadow: 0 0 15px 0.5px rgba(0, 0, 0, 0.15);
+            color:white;
+        }
+        .main2{
+            background: #70e1f5;
+            background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+            background: linear-gradient(to right, #ffd194, #70e1f5);
+            color:white;
+            box-shadow: 0 0 15px 0.5px rgba(0, 0, 0, 0.15);
+        }
+        .main3{
+            background: #f2709c;
+            background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
+            background: linear-gradient(to right, #ff9472, #f2709c);
+            box-shadow: 0 0 15px 0.5px rgba(0, 0, 0, 0.15);
+            color:white;
+        }
+
+
+        .con{
+            box-shadow: 0 0 15px 0.5px rgba(0, 0, 0, 0.15);
+            font-size: 13px; 
+        }
+        
+        .body{
+            font-size: 13px;
+        }
+        .boxes{
+            padding: 0px 30px;
+        }
+        .fa{
+            color: yellow;  
+        }
+        .fas {
+            color:white;
+            font-size:65px ;
+        }
+        .card1{
+            box-shadow: 0 0 15px 0.5px rgba(0, 0, 0, 0.15);
+            border-radius: 0;
+             height: 140px; 
+             margin: 0;
+                         
+            }
+        .card1:hover{
+         transform: scale(1.3);
+         transition-duration: 0.1s;
+          }
+         
+         
+
+        .Top {
+          padding-left: 100px;
+          padding-right: 150px;
+         }   
+         .fa-dev,.fa-laptop-code,.fa-mobile-alt,.fa-funnel-dollar,
+         .fa-file-code,.fa-database,.fa-chalkboard-teacher,.fa-mask,.fa-jsfiddle,
+          .fa-python,.fa-codepen{
+              font-size: 40px;
+            }  
+
+            .form{
+                height:150px;
+            }
+            .head{
+                text-align: center;
+            }
+            .contact{
+                background-color: white;
+                color: blue;
+                margin-left: 46%;
+            }
+            .contact:hover{
+                background-color: red;
+                color: white;
+            }
+            
+                    .card2{
+                        border-radius: 0;
+                         height: 170px; 
+                        
+                     }
+                     .card2:hover{
+                         box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15); 
+                     }
+                     .fa-check-circle,.fa-chart-line,.fa-infinity,.fa-clock{
+                         font-size: 40px ;
+                         padding: 20px ;
+                     } 
+                    .why{
+                            background: url("C:/Users/manas/OneDrive/Documents/images/12490.jpg");
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        .why1{
+                            text-align: center;
+                            color: #0c5397;
+                        }
+                        .why2{
+                            background: #fbfbfbd1;
+                        }
+                        .why2:hover{
+                            color: white;
+                            background:  #0c5397;
+                            transform: scale(1.1);
+                        }
+                        .num{
+                            font-size: 50px;
+                            /* color: #0c5397; */
+                        }
+                    .bx1:hover{
+                        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+                        transform: scale(1.1);
+                        transition-duration: 0.1s;
+                        background-color: orange;
+                        color: white;
+                    } 
+                    .bx2{
+                        background-image: url(C:/Users/manas/OneDrive/Documents/images/back-4.jpg);
+                        background-size:cover;
+                        background-position: center;
+                        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+                        border-radius: 1px;
+                        padding: 0px 20px;
+                        
+                    }
+                    .bx2:hover{
+                        transform: scale(1.1);
+                        transition-duration: 0.5s;
+                       
+                    }
+                    .business{
+                        padding-top: 30px;
+                        padding-left:10%;
+                        width: 100%;
+                        height: 280px;
+                        background-image: url("C:/Users/manas/Downloads/image/edureka.png");
+                        color:white;
+                        background-position:right;
+                        background-repeat:no-repeat;
+                        background-size:cover;
+                        
+			         }
+                    .business-Contact{
+                          color: blue;
+                          background-color: white;
+                          padding: 5px;
+                    }
+                    .business-Contact:hover{
+                          color: white;
+                          background-color: orangered;
+                    }
+                    .bx3{
+                        background-image: url(C:/Users/manas/OneDrive/Documents/images/back.jpg);
+                        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.15);
+                        border: 1px solid;
+                        width: 90%;
+                        height: 150px;
+                        margin-left:40px;
+                        background-size:cover;
+                        background-position: center;
+                        border-radius: 1px;
+                        border-radius: 5px;
+                    }
+                    .fa-angle-double-down{
+                        font-size: 25px;
+                        padding-left:90% ;
+                    }
+                    .bx0{
+                        background-color:gray;
+                        width: 90%;
+                        height: 400px;
+                        margin-left: 40px;
+                        background-size:cover;
+                        background-position: center;
+                        
+                    }
+                    .Top3 {
+                        padding-right: 150px;
+                        } 
+
+                        
+                        .social1{
+                            text-align: center;
+                            align-items: center;
+                            margin:20px;
+
+                            margin:0 auto;
+                                }
+                        .social .fab{
+                            font-size: 30px;
+                            padding: 5px;
+                        }
+                        /*.media:hover{
+                            transform: rotate(90deg);
+                        }*/
+                        .media:hover {
+                        animation: rotation 3s infinite ;
+                                }
+
+                                @keyframes rotation {
+                        from {
+                            transform: rotate(0deg);
+                        }
+                            to {
+                    transform: rotate(360deg);
+                            }
+                        }
+                    .last{
+                        font-size: 30px;
+                    }
+                    .info{
+                        font-size: 20px;
+                    }
+                    .licons{
+                        padding-top: 10px;
+                        padding-left: 40px;
+                    }
+                    .Top3 {
+                        padding-right: 150px;
+                            }
+                            .list{
+                                color: white;
+                            }
+                    .list:hover{
+                    color: red
+                    }
+                    .footer{
+                        position:fixed;
+                       /* max-width: 99%; */
+                        bottom: 0px;
+                        z-index: 1001;
+                    }
+                    .btn4 {
+                        position: fixed;
+                        left: 94%;
+                        top: 200px;
+                        z-index: 1004;
+                        transform: rotate(-90deg);
+                        background: orangered;
+                        color: white;
+                    }
+                    .btn4:hover{
+                        color:white;
+                    }
+                    
+                     
+    </style>
+</head>
+
+<body>
+    <nav class="container-fluid col-md-12 navbar navbar-expand-sm  bg-dark navbar-light  ">
+        <a class="col-md-9 navabr-brand col-6" href="#" >
+            <img src="C:\Users\manas\OneDrive\Documents\images/AIT.jpg" alt="logo" style="width: 260px;">
+        </a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsiblenavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="col-md-3 col-6 collapse navbar-collapse justify-content-center" id="collapsiblenavbar">
+            <ul class="nav nav-pills">
+                <li class="nav-item text-decoration-none"><a class="nav-link a1 " href="#">Corporate Training</a></li>
+                <li class="nav-item text-decoration-none"><a class="nav-link a1 " href="#">Placements page</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid bg-white sticky-top">
+            <ul class="nav  py-3 px-2 mx-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggler tx" data-toggle="dropdown" href="#"><i class="far fa-bars"></i>Courses</a>
+                    <div class="dropdown-menu dropright m-0">
+                        <a class="dropdown-item bg-warning p-4 text-center text-white" href="#">Courses Lists</a>
+                        <a class="dropdown-item  p-3 " href="#">Front-end courses</a>
+                        <a class="dropdown-item  p-3 " href="#">Digital Marketing Courses</a>
+                    </div>
+                </li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">UI Development</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">Angular</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">React JS</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">VUE JS</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">MEAN</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">MERN</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">Digital Marketing</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">PYTHON</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">ICONIC</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">React Native</a></li>
+                <li class="nav-item d-none d-md-block"><a class="nav-link txt" href="#">WEB DEV</a></li>
+            </ul>
+    </div>
+        
+    
+<div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators pb-3">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="C:\Users\manas\OneDrive\Documents\images\angular_training.jpg" alt="ang" width="100%">
+                <div class="carousel-caption">
+                    <div class="name">
+                        <h1>ANGULAR DEVELOPMENT COURSE</h1>
+                        <button class="border p-2 text-white">EXPLORE COURSE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\manas\OneDrive\Documents\images\react_training.jpg" alt="react" width="100%" >
+                <div class="carousel-caption">
+                    <div class="name">
+                        <h1>REACTJS DEVELOPMENT COURSE</h1>
+                        <button class="border p-2 text-white">EXPLORE COURSE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\manas\OneDrive\Documents\images\aws_training.jpg" alt="aws" width="100%" >
+                <div class="carousel-caption">
+                    <div class="name">
+                        <h1 class="">PYTHON DEVELOPMENT COURSE</h1>
+                        <button class="border p-2  text-white">EXPLORE COURSE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\manas\OneDrive\Documents\images\web_development.jpg" alt="aws" width="100%" >
+                <div class="carousel-caption">
+                    <div class="name">
+                        <h1 class="">WEB DEVELOPMENT COURSE</h1>
+                        <button class="border p-2  text-white">EXPLORE COURSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+</div>
+
+<div class="container col-md-12">
+        <div class="pos">
+            <div class="row">
+                <div class="col-md-3 mx-5 p-4 text-decoration-none row box">
+                    <div class="text text-lightgrey" >BECOME A <br><b>UI DEVELOPER</b><br></div>
+    				<div class="txts">Know More</div>
+                </div>
+
+                <div class=" col-md-3 mx-5 p-4 text-decoration-none row box1">
+                    <div class="text text-lightgrey" >BECOME A<br> <b> ANGULAR DEVELOPER </b></div>
+    				<div class="txts">Know More </div>
+                </div>
+
+                <div class=" col-md-3 mx-5 p-4 text-decoration-none row box2">
+                    <div class="text text-lightgrey" >BECOME A <br><b>REACTJS DEVELOPER</b></div>
+    				<div class="txts">Know More </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<h3 class=" pl-5 mb-4 mx-5 mt-4">TRENDING COURSES</h3>
+
+<div class=" row mx-4 pb-5">
+    <div class=" col-md-4 mt-4 col-lg-3">
+        <div class="row main  m-0 ">
+                <div class="col-3 pt-3 "><i class="fab fa-angular"></i>
+                </div>
+                <div class="col-9 pl-3"><h5 class="mt-2 pb-3 ">ANGULAR <br>DEVELOPMENT <br>COURSE</h5> 
+                </div>
+        </div>
+            <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+            includes altogether lessen the measure of...</p>
+            <hr>
+            <h6 class="px-3"> REVIEWS</h6>
+            <div class="rev px-3 ">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+            </div> 
+            </div>  
+        </div>
+        <div class="col-md-4 mt-4  col-lg-3">
+            <div class="row main1  m-0 " >
+                    <div class="col-3 pt-4 p "><i class="fab fa-react"></i>
+                    </div>
+                    <div class="col-9 "><h5 class="mt-3 ml-2 pb-2 ">REACT <br>DEVELOPMENT COURSE</h5> 
+                    </div>
+            </div>
+            <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+                includes altogether lessen the measure of...</p>
+                <hr>
+                <h6 class="px-3" > REVIEWS</h6>
+                <div class="rev px-3 ">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+                </div> 
+                </div>  
+            </div>
+    <div class="col-md-4 mt-4 col-lg-3">
+        <div class="row main2 m-0" >
+                <div class="col-3 pt-4 "><i class="fas fa-shield-alt "></i>
+                </div>
+                <div class="col-9"><h5 class="m-3 ">MEAN STACK DEVELOPMENT COURSE</h5> 
+                </div>
+        </div>
+        <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+            includes altogether lessen the measure of...</p>
+            <hr>
+            <h6 class="px-3" > REVIEWS</h6>
+            <div class="rev px-3">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+            </div>
+            </div>   
+        </div>
+    <div class=" col-md-4 mt-4 col-lg-3">
+        <div class="row main3  m-0" >
+                <div class="col-3 pt-4 "><i class="fab fa-firefox"></i>
+                </div>
+                <div class="col-9"><h5 class="m-3 ">MERN STACK DEVELOPMENT COURSE</h5> 
+                </div>
+        </div>
+        <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+            includes altogether lessen the measure of...</p>
+            <hr>
+            <h6 class="px-3"> REVIEWS</h6>
+            <div class="rev px-3">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+            </div> 
+            </div>  
+        </div>
+</div>
+
+<div class="row mx-4 pb-5">
+    <div class=" col-md-4 mt-4 col-lg-3">
+        <div class="row main m-0" >
+                <div class="col-3 pt-4 "> <i class="fas fa-globe"></i>
+                </div>
+                <div class="col-9"><h5 class="m-3 ">WEB <br>DEVELOPMENT COURSE</h5> 
+                </div>
+        </div>
+        <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+            includes altogether lessen the measure of...</p>
+            <hr>
+            <h6 class="px-3"> REVIEWS</h6>
+            <div class="rev px-3">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+            </div>
+            </div>   
+        </div>
+        <div class=" col-md-4 mt-4 col-lg-3 ">
+            <div class="row main1 m-0" >
+                    <div class="col-3 pt-4 "><i class="fas fa-poll"></i>
+                    </div>
+                    <div class="col-9"><h5 class="m-3 ">DIGITAL DEVELOPMENT COURSE</h5> 
+                    </div>
+            </div>
+            <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+                includes altogether lessen the measure of...</p>
+                <hr>
+                <h6 class="px-3"> REVIEWS</h6>
+                <div class="rev px-3">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+                </div> 
+                </div>  
+            </div>
+    <div class="  col-md-4 mt-4 col-lg-3">
+        <div class="row  main2  m-0" >
+                <div class="col-3 pt-4 "><i class="fab fa-vuejs"></i>
+                </div>
+                <div class="col-9"><h5 class="m-3 ">REACT NATIVE DEVELOPMENT COURSE</h5> 
+                </div>
+        </div>
+        <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+            includes altogether lessen the measure of...</p>
+            <hr>
+            <h6 class="px-3"> REVIEWS</h6>
+            <div class="rev px-3">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+            </div>
+            </div>   
+        </div>
+    <div class=" col-md-4 mt-4 col-lg-3">
+        <div class="row  main3 m-0" >
+                <div class="col-3 pt-4 "><i class="fab fa-bity"></i>
+                </div>
+                <div class="col-9"><h5 class="m-3 ">IONIC <br>DEVELOPMENT COURSE</h5> 
+                </div>
+        </div>
+        <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+            includes altogether lessen the measure of...</p>
+            <hr>
+            <h6 class="px-3"> REVIEWS</h6>
+            <div class="rev px-3">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i> 5.0(257)
+            </div>
+            </div>   
+        </div>
+</div>
+<h3 class=" pl-5 mb-4 mx-5 mt-4">RECENT ADDITIONS</h3>
+<div class="row mx-4 pb-3 ">
+    <div class="col-md-4 mt-4 col-lg-3">
+        <div class="row main m-0" >
+                <div class="col-3 pt-4 "> <i class="fab fa-uikit"></i>
+                </div>
+                <div class="col-9"><h5 class="m-3 ">UI <br>DEVELOPMENT  COURSE</h5> 
+                </div>
+        </div>
+        <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+            includes altogether lessen the measure of...</p>
+            <hr>
+            <h6 class="px-3"> REVIEWS</h6>
+            <div class="rev px-3">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+            </div>
+            </div>   
+        </div>
+        <div class=" col-md-4 mt-4 col-lg-3">
+            <div class="row  main1 m-0" >
+                    <div class="col-3 pt-4 "><i class="fas fa-poll"></i>
+                    </div>
+                    <div class="col-9"><h5 class="m-3 ">DIGITAL MARKETING COURSE</h5> 
+                    </div>
+            </div>
+            <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+                includes altogether lessen the measure of...</p>
+                <hr>
+                <h6 class="px-3"> REVIEWS</h6>
+                <div class="rev px-3">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>  5.0(257)
+                </div>
+                </div>   
+            </div>
+    <div class=" col-md-4 mt-4 col-lg-3">
+        <div class="row main2 m-0" >
+                <div class="col-3 pt-4 "><i class="fab fa-react"></i>
+                </div>
+                <div class="col-9"><h5 class="m-3 ">VUEJS DEVELOPMENT COURSE</h5> 
+                </div>
+        </div>
+        <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+            includes altogether lessen the measure of...</p>
+            <hr>
+            <h6 class="px-3"> REVIEWS</h6>
+            <div class="rev px-3">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i> 5.0(257)
+            </div>  
+            </div> 
+        </div>
+    <div class=" col-md-4 mt-4 col-lg-3">
+        <div class="row main3   m-0" >
+                <div class="col-3 pt-4 "><i class="fab fa-python"></i>
+                </div>
+                <div class="col-9"><h5 class="m-3 ">PYTHON DEVELOPMENT COURSE</h5> 
+                </div>
+        </div>
+        <div class="con"><p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+            includes altogether lessen the measure of...</p>
+            <hr>
+            <h6 class="px-3"> REVIEWS</h6>
+            <div class="rev px-3">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+            </div>
+            </div>   
+        </div>
+</div>
+
+<h3 class="pt-3 pl-5 mb-4 mx-4 mt-3">Discover Top Categories</h3>
+
+<div class="container col-md-12  p-0 my-2">
+        <div class="row mx-2 Top ">
+                    <div class=" col-md-2 p-4">
+                        <div class="card1  ">
+                            <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fab fa-dev text-danger"></i></div>
+                            <div class=" body  pb-5 pl-5 "><b>DevOps</b></div>
+                        </div>
+                    </div>
+                    <div class=" col-md-2 p-4">
+                        <div class="card1 ">
+                            <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fas fa-laptop-code text-primary"></i></div>
+                                <div class=" body  pb-5 pl-5 "><b>FrontEnd</b></div>
+                        </div>
+                    </div>
+                    <div class=" col-md-2 p-4">
+                        <div class="card1 ">
+                            <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fas fa-mobile-alt text-info"></i></div>
+                                <div class=" body  pb-5 pl-4 "><b>MobileAppDev</b></div>
+                        </div>
+                    </div>
+                    <div class=" col-md-2 p-4 ">
+                        <div class="card1 ">
+                            <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fas fa-funnel-dollar text-success"></i></div>
+                                <div class=" body  pb-5 pl-4"><b>DigitalMarketing</b></div>
+                        </div>
+                    </div>
+                    <div class=" col-md-2 p-4">
+                        <div class="card1">
+                            <div class=" pl-5 pr-5 pt-4 pb-3"><i class="fas fa-file-code text-warning "></i></div>
+                                <div class=" body  pb-0 pl-5 "><b>Program</b></div>
+                        </div>
+                    </div>
+                    <div class=" col-md-2 p-4 ">
+                        <div class="card1">
+                            <div class="col-md-2 pl-5 pr-5 pt-4 pb-3"><i class="fas fa-database text-secondary"></i></div>
+                                <div class=" body col-md-2 pb-5 pl-5"><b>DataTypes</b></div>
+                        </div>
+                    </div>
+             </div>
+    </div>
+<div class="container col-md-12  p-0 ">
+        <div class="row mx-2 Top">
+                <div class=" col-md-2 p-4">
+                    <div class="card1 ">
+                        <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fas fa-chalkboard-teacher text-success"></i></div>
+                        <div class=" body col-2 pb-5 pl-4 "><b>Softwaretesting</b></div>
+                    </div>
+                </div>
+                <div class=" col-md-2 p-4">
+                    <div class="card1 ">
+                        <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fab fa-jsfiddle text-danger"></i></div>
+                        <div class=" body col-2 pb-5 pl-4 "><b>CloudComputing</b></div>
+                    </div>
+                </div>
+                <div class=" col-md-2 p-4">
+                    <div class="card1 ">
+                        <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fas fa-mask text-secondary"></i></div>
+                        <div class=" body col-2 pb-5 pl-4 "><b>CyberSecurity</b></div>
+                    </div>
+                </div>
+                <div class=" col-md-2 p-4 ">
+                    <div class="card1 ">
+                        <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fas fa-mobile-alt text-info"></i></div>
+                        <div class=" body col-2 pb-3 pl-3  "><b>ArtificialInteligents</b></div>
+                    </div>
+                </div>
+                <div class=" col-md-2 p-4">
+                    <div class="card1">
+                        <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fab fa-python text-success"></i></div>
+                        <div class=" body col-2 pb-5 pl-5"><b>Python</b></div>
+                    </div>
+                </div>
+                <div class=" col-md-2 p-4 ">
+                    <div class="card1">
+                        <div class="col-2 pl-5 pr-5 pt-4 pb-3"><i class="fab fa-codepen text-dark"></i></div>
+                        <div class=" body col-2 pb-5 pl-5 "><b>Bigdata</b></div>
+                    </div>
+                </div>
+         </div>
+</div>
+       
+<h3 class="ml-5 pl-5 pt-5">Reviews</h3>    
+<div id="demo" class="container carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators pb-3">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        
+        
+    </ul>
+    <div class="row">
+       
+        <div class="col-12">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row mx-4 pb-3 boxes col-md-12">
+                                <div class="col-md-4 mt-4 ">
+                                    <div class="row main1 m-0" >
+                                            <div class="col-3 pt-4 pb-3 "> <i class="fab fa-buysellads"></i>
+                                            </div>
+                                            <div class="col-9 pt-3"><h5 class="m-3 ">ASHISH SEKHAR</h5> 
+                                            </div>
+                                    </div>
+                                    <div class="con">
+                                    <p class="px-3 pt-2"> Ui & Angular Certification Training</p>
+                                        <div class="rev px-3">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+                                        </div>
+                                    <p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+                                        includes altogether lessen the measure of...</p>
+                                        <hr>
+                                        
+                                    </div>   
+                                </div>
+                            
+                                <div class="col-md-4 mt-4 ">
+                                    <div class="row main2 m-0" >
+                                            <div class="col-3 pt-4 pb-3 "> <i class="fab fa-buysellads"></i>
+                                            </div>
+                                            <div class="col-9 pt-3"><h5 class="m-3 ">ASHISH SEKHAR</h5> 
+                                            </div>
+                                    </div>
+                                    <div class="con">
+                                    <p class="px-3 pt-2"> Ui & Angular Certification Training</p>
+                                        <div class="rev px-3">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+                                        </div>
+                                    <p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+                                        includes altogether lessen the measure of...</p>
+                                        <hr>
+                                        
+                                    </div>   
+                                </div>
+                                <div class="col-md-4 mt-4 ">
+                                    <div class="row main3 m-0" >
+                                            <div class="col-3 pt-4 pb-3 "> <i class="fab fa-buysellads"></i>
+                                            </div>
+                                            <div class="col-9 pt-3"><h5 class="m-3 ">ASHISH SEKHAR</h5> 
+                                            </div>
+                                    </div>
+                                    <div class="con">
+                                    <p class="px-3 pt-2"> Ui & Angular Certification Training</p>
+                                        <div class="rev px-3">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+                                        </div>
+                                    <p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+                                        includes altogether lessen the measure of...</p>
+                                        <hr>
+
+                                    </div>   
+                                </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row mx-4 pb-3 boxes col-md-12">
+                                <div class="col-md-4 mt-4 ">
+                                    <div class="row main2 m-0" >
+                                            <div class="col-3 pt-4 pb-3 "> <i class="fab fa-buysellads"></i>
+                                            </div>
+                                            <div class="col-9 pt-3"><h5 class="m-3 ">ASHISH SEKHAR</h5> 
+                                            </div>
+                                    </div>
+                                    <div class="con">
+                                    <p class="px-3 pt-2"> Ui & Angular Certification Training</p>
+                                        <div class="rev px-3">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+                                        </div>
+                                    <p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+                                        includes altogether lessen the measure of...</p>
+                                        <hr>
+                                        
+                                    </div>   
+                                </div>
+                            
+                                <div class="col-md-4 mt-4 ">
+                                    <div class="row main1 m-0" >
+                                            <div class="col-3 pt-4 pb-3 "> <i class="fab fa-buysellads"></i>
+                                            </div>
+                                            <div class="col-9 pt-3"><h5 class="m-3 ">ASHISH SEKHAR</h5> 
+                                            </div>
+                                    </div>
+                                    <div class="con">
+                                    <p class="px-3 pt-2"> Ui & Angular Certification Training</p>
+                                        <div class="rev px-3">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+                                        </div>
+                                    <p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+                                        includes altogether lessen the measure of...</p>
+                                        <hr>
+                                        
+                                    </div>   
+                                </div>
+                                <div class="col-md-4 mt-4 ">
+                                    <div class="row main m-0" >
+                                            <div class="col-3 pt-4 pb-3 "> <i class="fab fa-buysellads"></i>
+                                            </div>
+                                            <div class="col-9 pt-3"><h5 class="m-3 ">ASHISH SEKHAR</h5> 
+                                            </div>
+                                    </div>
+                                    <div class="con">
+                                    <p class="px-3 pt-2"> Ui & Angular Certification Training</p>
+                                        <div class="rev px-3">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>5.0(257)
+                                        </div>
+                                    <p class="px-3 py-2">Aangular is papular for making dinamic application and its information official and reliance infucion
+                                        includes altogether lessen the measure of...</p>
+                                        <hr>
+
+                                    </div>   
+                                </div>
+
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev " href="#demo"  data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo"  data-slide="next">
+        <span class="carousel-control-next-icon "></span>
+    </a>
+</div>
+    
+
+<h6 class="Review text-center text-primary "><b>VIEW ALL REVIEWS</b></h6>
+</div><br>
+  
+
+<div class="container-fluid form border border-black   bg-info">
+    <h4 class="text-white pt-4 head pl-2 ml-5 justify-content-center">Enroll, Learn, Grow, Repeat! Get ready to achieve your learning goals with Acheivers IT</h4>
+    <button class="border contact p-2">CONTACT US</button>
+</div>
+<h3 class="coml-5 pl-5 pt-5">Acheivers IT Edge</h3>
+           
+        <div class="container-fluid row  col-md-12 pb-5">
+                <div class=" col-md-3 p-4 pl-5 col-6">
+                    <div class="card2 pl-4 ">
+                        <div class=" pl-5 "><i class="fas fa-check-circle text-info "></i></div>
+                        <div class=" px-0 pl-4 "><small><b>RealTimeDoubtResolution</b><br>With Live Instructors</small></div>
+                    </div>
+                </div>
+                <div class=" col-md-3 p-4 pl-5 col-6">
+                    <div class="card2 pl-4 ">
+                        <div class=" pl-5 "><i class="fas fa-infinity text-danger"></i></div>
+                        <div class=" px-0 pl-4"><small><b>RealTimeDoubtResolution</b><br>With Live Instructors</small></div>
+                    </div>
+                </div>
+                <div class=" col-md-3 p-4 pl-5 col-6">
+                    <div class="card2 pl-4">
+                        <div class=" pl-5"><i class="fas fa-clock text-secondary"></i></div>
+                        <div class=" px-0 pl-4"><small><b>RealTimeDoubtResolution</b><br>With Live Instructors</small></div>
+                    </div>
+                </div>
+                <div class=" col-md-3 p-4 pl-5 col-6">
+                    <div class="card2 pl-5">
+                        <div class=" pl-5 "><i class="fas fa-chart-line text-warning"></i></div>
+                        <div class=" px-0 pl-4"><small><b>RealTimeDoubtResolution</b><br>With Live Instructors</small></div>
+                    </div>
+                </div>
+        </div>
+<div class="container-fluid col-md-12 why">
+            <h2 class="why1 pt-3 text-primary">Why We are on TOP 1</h2>
+             <p class="why1 text-primary">More people train with AcheiversIT because of ourcommitment to quality, Placement Support, and Real-time Training.</p>
+             <div class="row">
+                 <div class="col-md-3 p-4 text-primary">
+                     <div class="why2 p-2 bx1 pl-5">
+                         <div class="ml-4  num">13925 +</div>
+                         <p class="ml-4 pt-4 ">TRENDING COURSES</p>
+                     </div>
+                 </div>
+        
+                 <div class="col-md-3 p-4 text-primary ">
+                     <div class="why2 p-2 bx1 pl-5">
+                         <div class="ml-5 num pl-3">100 +</div>
+                         <p class="ml-2">IT Companies are tied-UP to hire our trained students</p>
+                     </div>
+                 </div>
+                 <div class="col-md-3 p-4 text-primary ">
+                     <div class="why2 p-2 bx1 pl-5">
+                         <div class="ml-5  num pl-4">50 +</div>
+                         <p class="ml-2">Students attend Interviews every day through our Placement Cell</p>
+                     </div>
+                 </div>
+                 <div class="col-md-3 p-4 text-primary ">
+                     <div class="why2 p-2 bx1 pl-5">
+                         <h1 class="ml-5  num pl-4">5 +</h1>
+                         <p class="ml-2 pb-1">Of our students Get Jobs every day in Bangalore and Chennai</p>
+                     </div>
+                 </div>
+             </div>
+</div>
+
+
+<div><h3 class="ml-5 pl-5 mt-5 pt-3">Our Trainers From</h3></div>
+
+        <div class="col-md-12  ">
+                <div class="row ml-5 col-md-11 col-12">
+                    <div class="card4 col-md-3 text-primary ">
+                        <div class="bx2 mt-5 py-4 ">
+                            <div class="ml-4 mt-3 mb-3 pl-4"><img src="C:\Users\manas\OneDrive\Documents\images/cognizant.png" alt="cognizant" width="180px"/></div>
+                        </div>
+                    </div>
+                    <div class="card4 col-md-3  text-primary ">
+                        <div class="bx2 mt-5 py-5 ">
+                            <div class="ml-4 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/hcl.png" alt="hcl" width="120px"/></div>
+                        </div>
+                    </div>
+                    <div class="card3 col-md-3  text-primary ">
+                        <div class="bx2 mt-5  py-5   ">
+                            <div class="ml-4 mt-2 pl-5  "><img src="C:\Users\manas\OneDrive\Documents\images/infosys.png" alt="infosys" width="120px"/></div>
+                        </div>
+                    </div>
+                    <div class="card3 col-md-3  text-primary ">
+                        <div class="bx2 mt-5 py-5">
+                            <div class="ml-4 mt-2 pl-5"><img src="C:\Users\manas\OneDrive\Documents\images/accenture.png" alt="accenture" width="120px"/></div>
+                        </div>
+                    </div>  
+                </div>
+            
+                <div class="row ml-5 col-md-11 ">
+                    <div class="card4 col-md-3 text-primary  ">
+                        <div class="bx2 mt-5 py-5 ">
+                            <div class="ml-4 mt-2 pl-5 pb-4"><img src="C:\Users\manas\OneDrive\Documents\images/oracle.png" alt="oracle" width="130px"/></div>
+                        </div>
+                    </div>
+                    <div class="card4 col-md-3  text-primary ">
+                        <div class="bx2 mt-5 py-5 ">
+                            <div class="ml-4 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/ibm.png" alt="ibm" width="120px"/></div>
+                        </div>
+                    </div>
+                    <div class="card4 col-md-3  text-primary">
+                        <div class="bx2 mt-5  py-5   ">
+                            <div class="ml-4 mt-2 pl-5  "><img src="C:\Users\manas\OneDrive\Documents\images/amazon.png" alt="amazon" width="110px"/></div>
+                        </div>
+                    </div>
+                    <div class="card4 col-md-3  text-primary">
+                        <div class="bx2 mt-5 py-5">
+                            <div class="ml-4 mt-2 pl-5"><img src="C:\Users\manas\OneDrive\Documents\images/visa.png" alt="visa" width="120px"/></div>
+                        </div>
+                    </div>  
+                </div>
+            
+                <div class="row ml-5 col-md-11 ">
+                    <div class="card4 col-md-3 text-primary ">
+                        <div class="bx2 mt-5 py-4 ">
+                            <div class="ml-4 mt-2 pl-5 pb-4 pt-4"><img src="C:\Users\manas\OneDrive\Documents\images/wipro.png" alt="wipro" width="130px"/></div>
+                        </div>
+                    </div>
+                    <div class="card4 col-md-3  text-primary ">
+                        <div class="bx2 mt-5 py-5 ">
+                            <div class="ml-4 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/flipcart.png" alt="flipcart" width="125px"/></div>
+                    </div>
+                    </div>
+                    <div class="card4 col-md-3  text-primary">
+                        <div class="bx2 mt-5  py-5   ">
+                            <div class="ml-4 mt-2 pl-5  "><img src="C:\Users\manas\OneDrive\Documents\images/dell.png" alt="dell" width="125px"/></div>
+                    </div>
+                    </div>
+                    <div class="card4 col-md-3  text-primary">
+                        <div class="bx2 mt-5 py-5">
+                            <div class="ml-4 mt-2 pl-5"><img src="C:\Users\manas\OneDrive\Documents\images/genpact.png" alt="genpact" width="120px"/></div>
+                        </div>
+                    </div>  
+                </div>
+        </div>
+
+
+<div><h3 class="ml-5 pl-5 mt-5 pt-3 pb-4 ">Latest Job Openings</h3> </div> 
+
+
+<div class="row mr-0">
+    <div class="col-md-6 m-0">
+        <div id="accordion"class="mb-5 ml-3">
+        <div class="">
+            <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                <div class="mr-5 bx3 ">
+                    <div class=" pt-3 pl-3 text-white"><h4>Front End Developer - Angular js,Nodejs</h4>
+                           <h6>Location : Bangalore</h6>
+                           <i class="fas fa-angle-double-down"></i>
+                    </div>
+                </div>
+                
+            </a>
+        </div>
+        <div id="collapseOne" class="collapse" data-parent="#accordion">
+            <div class="card-body  bx0">
+                <ul>
+                <li><b>Roles and Responsibilities :</b>
+                <p>A front-end web developer is responsible for implementing visual elements that 
+                users see and interact with in a web application. have to supported by back-end web developers,
+                 who are responsible for server-side application logic and integration of the work front-end developer...</p>
+                 </li>
+                 <li><b>Desired Candidate Profile :</b>
+                Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on Angular and 1+ years of exp on NodeJS
+                </li>
+                <li><b>Experience :</b> 4 to 10 years.</li>
+                <li><b>Skill set :</b> HTML,CSS,JAvascript,Angular, Nodejs.</li>
+                <li><b>Notice Period:</b> 15 days to 30 days</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div id="accordion1"class="mb-5 ml-3">
+        <div class="">
+            <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                <div class="mr-5 bx3 ">
+                    <div class=" pt-3 pl-3 text-white"><h4>UI Developer - AngularJS Frameworks</h4>
+                           <h6>Location : Bangalore</h6>
+                           <i class="fas fa-angle-double-down"></i>
+                    </div>
+                </div>
+                
+            </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion1">
+            <div class="card-body bx0">
+                <ul>
+                    <li><b>Roles and Responsibilities :</b>
+                    <p>A front-end web developer is responsible for implementing visual elements that 
+                    users see and interact with in a web application. have to supported by back-end web developers,
+                     who are responsible for server-side application logic and integration of the work front-end developer...</p>
+                     </li>
+                     <li><b>Desired Candidate Profile :</b>
+                    Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on Angular and 1+ years of exp on NodeJS
+                    </li>
+                    <li><b>Experience :</b> 4 to 10 years.</li>
+                    <li><b>Skill set :</b> HTML,CSS,JAvascript,Angular, Nodejs.</li>
+                    <li><b>Notice Period:</b> 15 days to 30 days</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <div id="accordion2"class="mb-5 ml-3">
+        <div class="">
+            <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                <div class="mr-5 bx3 ">
+                    <div class=" pt-3 pl-3 text-white"><h4>UI UX Designer / Developer</h4>
+                           <h6>Location : Bangalore</h6>
+                           <i class="fas fa-angle-double-down"></i>
+                    </div>
+                </div>
+                
+            </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-parent="#accordion2">
+            <div class="card-body bx0">
+                <ul>
+                    <li><b>Roles and Responsibilities :</b>
+                    <p>A front-end web developer is responsible for implementing visual elements that 
+                    users see and interact with in a web application. have to supported by back-end web developers,
+                     who are responsible for server-side application logic and integration of the work front-end developer...</p>
+                     </li>
+                     <li><b>Desired Candidate Profile :</b>
+                    Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on Angular and 1+ years of exp on NodeJS
+                    </li>
+                    <li><b>Experience :</b> 4 to 10 years.</li>
+                    <li><b>Skill set :</b> HTML,CSS,JAvascript,Angular, Nodejs.</li>
+                    <li><b>Notice Period:</b> 15 days to 30 days</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6 m-0">
+    <div id="accordion3"class="mb-5 ml-0">
+    <div class="">
+        <a class="card-link" data-toggle="collapse" href="#collapseFour">
+            <div class="mr-5 bx3 ">
+                <div class=" pt-3 pl-3 text-white"><h4>Senior Software Engineer - Java Full Stack Developer</h4>
+                       <h6>Location : Bangalore</h6>
+                       <i class="fas fa-angle-double-down"></i>
+                </div>
+            </div>
+            
+        </a>
+    </div>
+    <div id="collapseFour" class="collapse" data-parent="#accordion">
+        <div class="card-body bx0">
+            <ul>
+            <li><b>Roles and Responsibilities :</b>
+            <p>A front-end web developer is responsible for implementing visual elements that 
+            users see and interact with in a web application. have to supported by back-end web developers,
+             who are responsible for server-side application logic and integration of the work front-end developer...</p>
+             </li>
+             <li><b>Desired Candidate Profile :</b>
+            Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on Angular and 1+ years of exp on NodeJS
+            </li>
+            <li><b>Experience :</b> 4 to 10 years.</li>
+            <li><b>Skill set :</b> HTML,CSS,JAvascript,Angular, Nodejs.</li>
+            <li><b>Notice Period:</b> 15 days to 30 days</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div id="accordion4"class="mb-5 ml-0">
+    <div class="">
+        <a class="card-link" data-toggle="collapse" href="#collapseFive">
+            <div class="mr-5 bx3 ">
+                <div class=" pt-3 pl-3 text-white"><h4>Python Developer ( Fresher ) Requirement.</h4>
+                       <h6>Location : Bangalore</h6>
+                       <i class="fas fa-angle-double-down"></i>
+                </div>
+            </div>
+            
+        </a>
+    </div>
+    <div id="collapseFive" class="collapse" data-parent="#accordion4">
+        <div class="card-body bx0">
+            <ul>
+                <li><b>Roles and Responsibilities :</b>
+                <p>A front-end web developer is responsible for implementing visual elements that 
+                users see and interact with in a web application. have to supported by back-end web developers,
+                 who are responsible for server-side application logic and integration of the work front-end developer...</p>
+                 </li>
+                 <li><b>Desired Candidate Profile :</b>
+                Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on Angular and 1+ years of exp on NodeJS
+                </li>
+                <li><b>Experience :</b> 4 to 10 years.</li>
+                <li><b>Skill set :</b> HTML,CSS,JAvascript,Angular, Nodejs.</li>
+                <li><b>Notice Period:</b> 15 days to 30 days</li>
+                </ul>
+        </div>
+    </div>
+</div>
+<div id="accordion5"class="mb-5 ml-0">
+    <div class="">
+        <a class="card-link" data-toggle="collapse" href="#collapseSix">
+            <div class="mr-5 bx3 ">
+                <div class=" pt-3 pl-3 text-white"><h4>.Net senior Developer- 5positions</h4>
+                       <h6>Location : Bangalore</h6>
+                       <i class="fas fa-angle-double-down"></i>
+                </div>
+            </div>
+            
+        </a>
+    </div>
+    <div id="collapseSix" class="collapse" data-parent="#accordion5">
+        <div class="card-body bx0">
+            <ul>
+                <li><b>Roles and Responsibilities :</b>
+                <p>A front-end web developer is responsible for implementing visual elements that 
+                users see and interact with in a web application. have to supported by back-end web developers,
+                 who are responsible for server-side application logic and integration of the work front-end developer...</p>
+                 </li>
+                 <li><b>Desired Candidate Profile :</b>
+                Front End Developer 4-10 yrs Angular js Nodejs, 2+ years of exp on Angular and 1+ years of exp on NodeJS
+                </li>
+                <li><b>Experience :</b> 4 to 10 years.</li>
+                <li><b>Skill set :</b> HTML,CSS,JAvascript,Angular, Nodejs.</li>
+                <li><b>Notice Period:</b> 15 days to 30 days</li>
+                </ul>
+        </div>
+    </div>
+</div>
+ </div> 
+
+
+
+ <div class="container-fluid business  ">
+    <h4>Acheivers IT !</h4> for business
+    <h4>No more dull edges in your company.Make your employees into masters....</h4>
+    <h4>Nurture talent with instructor-led courses on trending technologies</h4><br>
+    <button type="button" class="business-Contact">BUSINESS CONTACT</button>
+    </div>
+
+<div><h3 class="ml-5 pl-5 mt-5 pt-3 pb-4 ">Our Corpoprate Clients</h3> </div>
+
+<div class="container col-md-12  p-0 my-2">
+            <div class="row mx-2 Top3 ">
+                <div class=" col-md-2 py-4 px-0 col-6">
+                        <div class="  ml-5 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/hcl.png" alt="hcl" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-4 col-6 ">
+                        <div class="  ml-5 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/cognizant.png" alt="cognizant" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-0 col-6 ">
+                    <div class="ml-5 mt-2 pl-5  "><img src="C:\Users\manas\OneDrive\Documents\images/infosys.png" alt="infosys" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-4 col-6 ">
+                    <div class=" ml-5 mt-2 pl-5"><img src="C:\Users\manas\OneDrive\Documents\images/accenture.png" alt="accenture" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-0 col-6">
+                    <div class=" ml-5 mt-2 pl-5 pb-4"><img src="C:\Users\manas\OneDrive\Documents\images/oracle.png" alt="oracle" height="50px" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-4  col-6">
+                    <div class="  ml-5 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/ibm.png" alt="ibm" width="100px"/></div>
+                </div>
+            </div>
+</div>
+<div class="container col-md-12 p-0 my-2">
+            <div class="row mx-2 Top3 ">
+                <div class=" col-md-2 py-4 px-0 col-6">
+                    <div class="ml-5 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/wipro.png" alt="wipro" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-4 col-6">
+                    <div class="ml-5 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/amazon.png" alt="amazon" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-0 col-6">
+                    <div class="ml-5 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/flipcart.png" alt="flipcart" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-4 col-6 ">
+                    <div class="ml-5 mt-2 pl-5"><img src="C:\Users\manas\OneDrive\Documents\images/visa.png" alt="visa" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-0 col-6">
+                    <div class="ml-5 mt-2 pl-5 pb-4"><img src="C:\Users\manas\OneDrive\Documents\images/cisco.png" alt="cisco" width="100px"/></div>
+                </div>
+                <div class=" col-md-2 py-4 px-4 col-6 ">
+                    <div class="ml-5 mt-2 pl-5 "><img src="C:\Users\manas\OneDrive\Documents\images/dell.png" alt="dell" width="100px"/></div>
+                </div>
+            </div>
+</div>
+
+
+<footer class="page-footer font-small bg-dark  ">
+    <div class="row col-md-12">
+        <div class="col-md-3">
+        <div class="pl-4 pt-2">
+            <img src="C:\Users\manas\OneDrive\Documents\images/AIT.jpg" class="w-70" alt="ait">
+        </div>	
+        <p class="text-muted p-2 pl-5">AchieversIT - provides a wide group of opportunities for freshers and Experienced candidate who can develop their skills and build their career opportunities across multiple Companies.</p>
+        </div>	
+        <div class="pl-5">
+        <h5 class="text-muted pt-5 pl-5">
+            <b>COMPANY</b>
+        </h5>
+        
+            <ul class=" pl-5 pr-4 pt-2 list-unstyled">
+                <p class="list">Home</p>
+                <p class="list">Placements</p>
+                <p class="list">Corporate Training</p>
+                <p class="list">CONTACT US</p>
+            </ul>
+        </div>
+        <div class="pl-5">
+        <h5 class="text-muted pt-5 pl-5">
+            <b>TRENDING COURSES</b>
+        </h5>
+        
+            <ul class=" pl-5 pr-4 pt-2 list-unstyled">
+                <p class="list">UI Development Course</p>
+                <p class="list">Angular JS Course</p>
+                <p class="list">React JS Course</p>
+                <p class="list">Digital Marketing Course</p>
+                <p class="list">Python Course</p>
+            </ul>
+        </div>
+        
+        <div class="pl-5">
+        <h5 class="text-muted pt-5 pl-5">
+            <b>CONTACT INFO</b>
+        </h5>
+        
+            <ul class=" pl-5 pr-4 pt-2 list-unstyled1 text-white">
+                <p><i class="fas fa-map-marked-alt   info"></i>
+                  #272, 6th Main, Next to Preksha Montessori ,<br> 1st Floor, BTM 2nd Stage, Bangalore, <br>India - 560076</p>
+                <p><i class="fas fa-phone-volume    info"></i>India : +91 8431-040-457</p>
+                <p><i class="fas fa-envelope-open-text   info"></i>info@achieversit.com</p>
+                
+            </ul>
+        </div>
+        </div>
+        <hr class="bg-white mx-5">
+        <div class="col-md-12 social1">
+        <span class="social" ><a href=""><i class="fab fa-facebook fab-3x  font-small media"></i></a></span>
+        <span class="social"><a href=""><i class="fab fa-linkedin  media"></i></a></span>
+        <span class="social"><a href=""><i class="fab fa-twitter-square  media" aria-hidden="true"></i></a></span>
+        <span  class="social"><a href=""><i class="fab fa-pinterest  media"></i></a></span>
+        <span  class="social"><a href=""><i class="fab fa-youtube-square  media" aria-hidden="true"></i></a></span>
+        </div>
+        <div class="conatainer px-5 py-4">
+        <div class="row">
+            <div class="col-md-6 co-lg-6 text-muted pl-5 ">
+                Copyright © 2020 AchieversIT. All Rights Reserved
+            </div>
+            <div class="col-md-2 co-lg-2 pl-0 ml-0 pr-5">
+                <a href="" class="text-decoration-none text-white ">Privacy Policy</a>
+            </div>
+            <div class="col-md-2 co-lg-2   ">
+                <a href="" class="text-decoration-none text-white ">Terms of use</a>
+            </div>
+            <div class="col-md-2 co-lg-2   ">
+                <a href="" class="text-decoration-none  text-white ">Refund Policy</a>
+            </div>
+        </div>
+        </div>
+</footer>
+<div class="container-fluid  footer bg-dark"> 
+            <div class="row col-md-12">
+            <div class="row col-lg-4 col-4 ml-2">
+                <div class="row pb-3 pt-3 pl-5">
+                    <div class="px-5">
+                        <i class="fab fa-whatsapp text-success last"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row col-lg-4 col-4 pl-5 ml-5 ">
+                <div class="row px-5 pb-3 pt-3">
+                    <div>
+                        <i class="fas fa-phone-volume text-info  last"></i>
+                    </div>
+                    <div class="pl-2  d-none d-md-block text-white">
+                        Call us on : +91 8431-040-457
+                    </div>
+                </div>
+            </div>
+            <div class="row col-lg-4 col-4 pl-5 ">
+                <div class="row px-5 pb-3 pt-3 ml-5 pl-4">
+                    <div >
+                        <i class="far fa-envelope text-danger last"></i>
+                    </div>
+                    <div class=" pl-2 d-none d-md-block text-white">
+                        Request A Call Back
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<button type="button" class="btn btn-orangered btn-lg  p-1 btn4" data-toggle="modal"
+data-target="#modal-demo">CONTACT US</button>
+<div class="modal fade" id="modal-demo" tabindex="-1" role="dialog" aria-labelledby="modal-demo" aria-hidden="true">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+        <div class="form-group">
+            <form>
+                <label for="name">NAME</label>
+                <input type="text" name="name" class="form-control" placeholder="enter name">
+                <br>
+                <label for="email">EMAIL</label>
+                <input type="email" class="form-control" name="email" placeholder="enter email"><br>
+                <label for="contact">CONTACT NUMBER</label>
+                <input type="text" placeholder="Enter phone Number" class="form-control" name="contact">
+            </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn btn-block bg-danger text-white" data-dismiss="modal">submit</button>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+</body>
+
+</html>
