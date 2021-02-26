@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containing an image and three Button</title>
+</head>
+<body>
+    <img src="C:\Users\manas\OneDrive\Documents\images\img.jpg" alt="image" id="first"><br></br>
+
+    <button onclick="change()">button 1</button>
+    <button onclick="change1()">button 2</button>
+    <button onclick="change2()">button 3</button>
+    <script>
+        function change1(){
+              var image="C:/Users/manas/OneDrive/Documents/images/img4.jpg";
+              document.getElementById("first").src = image.replace("C:\Users\manas\OneDrive\Documents\images/img4.jpg");
+          }
+          function change2(){
+              var image1="C:/Users/manas/OneDrive/Documents/images/img5.jpg";
+              document.getElementById("first").src = image1.replace("C:\Users\manas\OneDrive\Documents\images/img5.jpg");
+          }
+          function change(){
+              var image="C:/Users/manas/OneDrive/Documents/images/img.jpg";
+              document.getElementById("first").src = image.replace("C:\Users\manas\OneDrive\Documents\images/img.jpg");
+          }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page to turn on the bulb</title>
+    <style>
+        img{
+            box-shadow: 0 0 15px 0.5px rgba(0, 0, 0, 0.15);
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" onclick="changeImage()" src="C:\Users\manas\OneDrive\Documents\images/bulboff.jpg" width="200" height="180">
+    <script>
+        function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match("bulbon")) {
+            image.src = "C:/Users/manas/OneDrive/Documents/images/bulboff.jpg";
+        } else {
+            image.src = "C:/Users/manas/OneDrive/Documents/images/bulbon.jpg";
+        }
+        }   
+    </script>
+</body>
+</html>
