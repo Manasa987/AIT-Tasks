@@ -1,0 +1,12 @@
+.txt{
+    color: gray;
+    padding:10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.txt:hover{
+    background-color: red;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+}

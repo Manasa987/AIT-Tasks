@@ -1,0 +1,9 @@
+import react from 'react';
+class About extends react.Component{
+    render(){
+        return(
+            <h1>This is About page </h1>
+        )
+    }
+}
+export default About;
