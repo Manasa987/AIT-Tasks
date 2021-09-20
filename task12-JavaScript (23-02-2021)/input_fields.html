@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first input fields has to copy to second input field</title>
+</head>
+<body>
+    <form>
+        <label>First Field:</label><input type="text" name="first" id="first"><br><br>
+        <label>Second Field:</label><input type="text" name="second" id="second"/>
+        <input type="button" value="click to copy" onClick="myFunction();" />
+    </form>
+    <script>
+    function myFunction()
+    {
+        var  first= document.getElementById("first");
+        var second = document.getElementById("second");
+        second.value = first.value;
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validate form</title>
+</head>
+<body>
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+        <label>First name :</label>
+        <input type = "text" name = "fname" placeholder="Enter a firstname" id="error" ><span id="error1"></span>  <br><br>
+        <label>Last name :</label> 
+        <input type = "text" name = "lname" placeholder="Enter a lastname" id="demo"><span id="demo1"></span> <br><br>
+        <label>Email :</label>
+        <input type = "text" name = "email" placeholder="Enter a Email" id="address"><span id="address1"></span> <br><br>
+        <label>password :</label>
+        <input type = "password" name = "pwd" placeholder="Enter a password" id="pasw"><span id="pasw1"></span> <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function validateForm() {
+      var fname = document.forms["myForm"]["fname"].value;
+            if (fname == "") {
+              document.getElementById("error1").innerHTML="First Name must be filled out";
+              document.getElementById("error").style.border="1px solid red";
+              document.getElementById("error1").style.color="red";
+            return false;
+            }
+            else if(fname.length <4){
+              document.getElementById("error1").innerHTML="firstName should be minimum 4 characters";
+              document.getElementById("error").style.border="1px solid red";
+              document.getElementById("error1").style.color="red";
+              return false;
+            }
+            else if(fname.length >12){
+              document.getElementById("error1").innerHTML="firstName should be Maximum  12 characters";
+              document.getElementById("error").style.border="1px solid red";
+              document.getElementById("error1").style.color="red";
+              return false;
+            }
+            else if(fname){
+              document.getElementById("error1").innerHTML="  ";
+              document.getElementById("error").style.border="1px solid gray";
+            }
+
+    var lname = document.forms["myForm"]["lname"].value;
+            if (lname == "") {
+              document.getElementById("demo1").innerHTML="First Name must be filled out";
+              document.getElementById("demo").style.border="1px solid red";
+              document.getElementById("demo1").style.color="red";
+            return false;
+            }
+            else if(lname.length <4){
+              document.getElementById("demo1").innerHTML="firstName should be minimum 4 characters";
+              document.getElementById("demo").style.border="1px solid red";
+              document.getElementById("demo1").style.color="red";
+              return false;
+            }
+            else if(lname.length >12){
+              document.getElementById("demo1").innerHTML="firstName should be Maximum  12 characters";
+              document.getElementById("demo").style.border="1px solid red";
+              document.getElementById("demo1").style.color="red";
+              return false;
+            }
+            else if(lname){
+              document.getElementById("demo1").innerHTML="  ";
+              document.getElementById("demo").style.border="1px solid gray";
+            }
+    var email = document.forms["myForm"]["email"].value;
+            if (email == "") {
+              document.getElementById("address1").innerHTML="Email address must be filled out";
+              document.getElementById("address").style.border="1px solid red";
+              document.getElementById("address1").style.color="red";
+              return false;
+            }
+            else if(email.indexOf('@') <=2){
+              document.getElementById("address1").innerHTML="invalid @ position";
+              document.getElementById("address").style.border="1px solid red";
+              document.getElementById("address1").style.color="red";
+              return false;
+            }
+            else if(email){
+              document.getElementById("address1").innerHTML="  ";
+              document.getElementById("address").style.border="1px solid gray";
+            } 
+    var pwd = document.forms["myForm"]["pwd"].value;
+            if (pwd == "") {
+              document.getElementById("pasw1").innerHTML="Email address must be filled out";
+              document.getElementById("pasw").style.border="1px solid red";
+              document.getElementById("pasw1").style.color="red";
+              return false;
+            }
+            else if(pwd.length<4){
+              document.getElementById("pasw1").innerHTML="Password should be at least 4 characters ";
+              document.getElementById("pasw").style.border="1px solid red";
+              document.getElementById("pasw1").style.color="red";
+              return false; 
+            }
+            else if(pwd.length>8){
+              document.getElementById("pasw1").innerHTML="Password should be maximum 8 characters";
+              document.getElementById("pasw").style.border="1px solid red";
+              document.getElementById("pasw1").style.color="red";
+              return false; 
+            }
+            else if(pwd){
+              document.getElementById("pasw1").innerHTML="  ";
+              document.getElementById("pasw").style.border="1px solid gray";
+            }   
+        }
+    </script>
+</body>
+</html>

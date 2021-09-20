@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Go Top</title>
+</head>
+<body>
+<div class="main">    
+<div class="main1"><img src="C:\Users\manas\OneDrive\Documents\images/AIT.jpg" class="AIT"><br> 
+<a class="Contact" href="#">Contact Us</a>
+<a class="Contact1" href="#">About Us</a>
+</div><br>
+<div class="jQ"><a class="j"href="#">jQuery</a></div>
+<div class="jQ"><a class="j"href="#">jQuery</a></div>
+<div class="jQ"><a class="j"href="#">jQuery</a></div>
+</div>
+<button id="Go top"><a href="#">Go Top</a></button><br><br>
+<button id="Go top"><a href="#">Go down</a></button>
+
+</body>
+<script>
+    $(".main1").css("background-color","cyan")
+    $(".main1").css("height",350);
+    $(".AIT").css("width",1000);
+    $(".Contact,.Contact1").css("text-decoration","none").css("color","black");
+    $(".Contact").css("padding-left",90);
+    $(".jQ").css("padding",10);
+    $(".j").css("text-decoration","none").css("color","black");
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".main").slideToggle(11000);
+        });
+    });
+
+</script>
+</html>

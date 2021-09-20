@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form>
+            <label>First </label><input type="text" name="name1" id="name1"><br><br>
+            <label>Second </label><input type="text" name="name2" id="name2"/><br><br>
+            <input type="button" value="copy" onClick="copy();" />
+        </form>
+        <script>
+            
+            function copy()
+            {
+                var name1 = document.getElementById("name1");
+                var name2 = document.getElementById("name2");
+                name2.value = name1.value;
+            }
+        </script>
+    </body>
+</html>

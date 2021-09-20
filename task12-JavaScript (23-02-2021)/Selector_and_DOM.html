@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .Name{
+           border: 1px solid;
+           background-color: black  ;
+       }
+    </style>
+</head>
+<body>
+    <h2 id="idName">This  is written using the getElementById.</h2>
+
+    <h3></h3>
+
+    <div class="className">
+    </div><br>
+
+        <div class="Name"><img class="className1" src="C:\Users\manas\OneDrive\Documents\images/AIT.jpg" alt="ait" >
+        </div><br>
+    
+    <div>
+        <h4>This  is written using the querySelector.</h4>
+    </div>
+    <div>
+        <h3>This  is written using the querySelectorAll.</h3>
+        <h3>This  is written using the querySelectorAll.</h3>
+    </div>
+    
+    
+    <script>
+            //Id:
+			// 	document.getElementById('idvalue') - return element as per their Id name
+               
+            document.getElementById('idName').style.backgroundColor = "yellow";
+
+			// Tagname:
+			// 	document.getElementsByTagName('tagname') - return elements as per their tag name
+
+            document.getElementsByTagName("h3")[0].innerHTML="This  is written using the getElementsByTagName.";
+            document.getElementsByTagName("h3")[0].style.color = "red";
+
+			//  Classname:
+			//     document.getElementsByClassName('class value') - return elements as per their class name
+           
+            document.getElementsByClassName('className')[0].innerHTML="This  is written using the getElementsByClassName.";
+            document.getElementsByClassName('className1')[0];
+
+			//  Query Selectors:
+			// 	document.querySelector('ul li') - Returns only first occurance
+           
+            document.querySelector('div h4').style.color="blue";
+
+			// 	document.querySelectorAll('ul li') - returns all the matched object
+
+            document.querySelectorAll('div h3').style.color="blue";
+           
+    </script>
+</body>
+</html>

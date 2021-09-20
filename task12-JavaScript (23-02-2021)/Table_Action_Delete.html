@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Table it consists of Action Delete</title>
+    <style>
+        table{
+            border: 1px solid;
+            border-collapse: collapse;
+	        width: 30%;
+        }
+        td, th {
+        border: 1px solid;
+        text-align: left;
+        padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>    
+        var allStudetns;
+            allStudetns = [
+                {
+                    id:1,
+                    Name:'Varma',
+                    address:'Bangalore'
+                },
+                {
+                    id:2,
+                    Name:'Sharma',
+                    address:'Bangalore'
+                },
+                {
+                    id:3,
+                    Name:'Varma',
+                    address:'Pune'
+                
+                },
+                {
+                    id:4,
+                    Name:'Sharma',
+                    address:'Bangalore'
+                    
+                }
+            ]
+            var tableHtml = `<table id="delete">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th>Action</th>
+                            </tr>`;
+            for(let i=0;i<4;i++){
+                tableHtml +=`<tr>
+                                <td>${allStudetns[i].id}</td>
+                                <td>${allStudetns[i].Name}</td>
+                                <td>${allStudetns[i].address}</td>
+                                <td onclick=myfunction(${i})>Delete</td>
+                            </tr>`
+            }
+            tableHtml +=`</table>`;
+            document.write(tableHtml);
+             function myfunction(){
+                 document.getElementById("delete").deleteRow(1);
+             }
+
+    </script>
+</body>
+</html>

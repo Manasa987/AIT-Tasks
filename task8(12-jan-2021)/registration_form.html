@@ -144,7 +144,7 @@
         function validateForm(e) {
             e.preventDefault();
             let genVal = "";
-            var female= document.getElementsByName("gender");
+            var female= document.getElementsByName("gender"); 
             for(let data of female){
                 if(data.checked == true){
                     genVal = data.value;
@@ -217,7 +217,7 @@
                        
             }
             
-        else{
+        if(fname && genVal &&  sname && phone && psw && days && months && years){
             document.forms.myForm.submit();
         }
                                   

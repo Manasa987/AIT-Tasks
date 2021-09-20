@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Body Mass Index </title>
+    </head>
+    <body>
+        <script>
+             var marksMass, marksHeight,johnsMass,johnsHeight,marksBMI,johnsBMI;
+		function calculation(marksMass, marksHeight,johnsMass,johnsHeight){
+
+marksBMI = marksMass / (marksHeight * marksHeight);
+johnsBMI = johnsMass / (johnsHeight * johnsHeight);
+
+var marksHigherBMI   = marksBMI > johnsBMI;
+
+document.write("marksBMI : "+marksBMI+"<br>","jhonsBMI : "+johnsBMI+"<br>");
+
+if(marksBMI > johnsBMI){
+  document.write("true");
+}
+else {
+  document.write('false');
+}
+}
+calculation(124,5,67,4);
+</script> 
+    </body>
+</html>
